@@ -6,6 +6,7 @@ namespace project_prn231.Controllers
     [Route("Login")]
     public class LoginController : Controller
     {
+        private readonly string url = "https://localhost:7272/api/User/login";
         public LoginController(HttpClient httpClient)
         {
             _httpClient = httpClient ?? throw new ArgumentNullException(nameof(httpClient));
@@ -16,7 +17,7 @@ namespace project_prn231.Controllers
         public async Task<IActionResult> Login(string email, string password)
         {
             var loginRequest = new { Email = email, Password = password };
-            var response = await _httpClient.PostAsJsonAsync("https://localhost:7272/api/User/login", loginRequest);
+            var response = await _httpClient.PostAsJsonAsync(url, loginRequest);
 
             if (response.IsSuccessStatusCode)
             {

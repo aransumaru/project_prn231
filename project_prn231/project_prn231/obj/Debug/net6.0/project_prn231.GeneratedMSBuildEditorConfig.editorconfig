@@ -18,6 +18,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\Admin\Downloads\hoc\SEKy8\PRN231\Project\project_prn231\project_prn231\project_prn231
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/Admin/Downloads/hoc/SEKy8/PRN231/Project/project_prn231/project_prn231/project_prn231/Views/Admin/Admin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQWRtaW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Admin/Downloads/hoc/SEKy8/PRN231/Project/project_prn231/project_prn231/project_prn231/Views/Answer/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW5zd2VyXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -32,4 +36,8 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/Admin/Downloads/hoc/SEKy8/PRN231/Project/project_prn231/project_prn231/project_prn231/Views/Login/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cTG9naW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Downloads/hoc/SEKy8/PRN231/Project/project_prn231/project_prn231/project_prn231/Views/Question/Question.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUXVlc3Rpb25cUXVlc3Rpb24uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
