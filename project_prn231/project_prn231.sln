@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35327.3
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "project_prn231_api", "project_prn231_api\project_prn231_api.csproj", "{5F6E7615-0D45-4CB7-9D28-1E3A0A63888F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "project_prn231_api", "project_prn231_api\project_prn231_api.csproj", "{5F6E7615-0D45-4CB7-9D28-1E3A0A63888F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "project_prn231", "project_prn231\project_prn231.csproj", "{7E5F4B26-21ED-4619-AF10-77752D7DB525}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{5F6E7615-0D45-4CB7-9D28-1E3A0A63888F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5F6E7615-0D45-4CB7-9D28-1E3A0A63888F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5F6E7615-0D45-4CB7-9D28-1E3A0A63888F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E5F4B26-21ED-4619-AF10-77752D7DB525}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E5F4B26-21ED-4619-AF10-77752D7DB525}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E5F4B26-21ED-4619-AF10-77752D7DB525}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E5F4B26-21ED-4619-AF10-77752D7DB525}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

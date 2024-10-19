@@ -141,6 +141,29 @@ namespace project_prn231_api.Controllers
 
             return Ok("Xóa thành công");
         }
+        // POST: api/user/login
+        [HttpPost("login")]
+        public IActionResult Login([FromBody] Login request)
+        {
+            if (request == null || string.IsNullOrEmpty(request.Email) || string.IsNullOrEmpty(request.Password))
+            {
+                return BadRequest("Thông tin đăng nhập không hợp lệ.");
+            }
+
+            var user = context.Users.FirstOrDefault(u => u.Email == request.Email && u.Password == request.Password);
+
+            if (user == null)
+            {
+                return Unauthorized("Thông tin đăng nhập không đúng.");
+            }
+
+            return Ok(new
+            {
+                user.UserId,
+                user.IsAdmin
+            });
+        }
+
     }
 
 }

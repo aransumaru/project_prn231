@@ -1,0 +1,119 @@
+﻿@model IEnumerable<project_prn231.Models.User>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Stores Login</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f5f5f5;
+        }
+
+        .login-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .login-box {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        .book-image {
+            width: 150px;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: #0d47a1;
+            margin-bottom: 20px;
+        }
+
+        .input-group {
+            margin-bottom: 15px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .login-btn {
+            width: 100%;
+            padding: 10px;
+            background-color: #0d47a1;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+            .login-btn:hover {
+                background-color: #1565c0;
+            }
+
+        .signup-link {
+            margin-top: 10px;
+        }
+
+            .signup-link a {
+                color: #0d47a1;
+                text-decoration: none;
+            }
+
+                .signup-link a:hover {
+                    text-decoration: underline;
+                }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-box">
+            <img src="/Image/book.jpg" alt="Books" class="book-image">
+            <h2>Book Stores Login</h2>
+            <form action="/Login" method="post">
+                <div class="input-group">
+                    <input type="email" name="Email" placeholder="Username" required />
+                </div>
+                <div class="input-group">
+                    <input type="password" name="Password" placeholder="Password" required />
+                </div>
+                <button type="submit" class="login-btn">Login</button>
+            </form>
+            <div class="signup-link">
+                <a href="/register">Sign up</a>
+            </div>
+
+        </div>
+        @if (!ViewData.ModelState.IsValid)
+        {
+            <div class="error-message" style="color:red;">
+                @foreach (var error in ViewData.ModelState.Values.SelectMany(v => v.Errors))
+                {
+                    <p>@error.ErrorMessage</p>
+                }
+            </div>
+        }
+    </div>
+</body>
+</html>
