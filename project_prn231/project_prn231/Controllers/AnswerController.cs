@@ -10,13 +10,18 @@ namespace project_prn231.Controllers
     
     public class AnswerController : Controller
     {
+        public AnswerController(HttpClient httpClient)
+        {
+            _httpClient = httpClient ?? throw new ArgumentNullException(nameof(httpClient));
+        }
+        private readonly HttpClient _httpClient;
         // Địa chỉ API của bạn
         private readonly string url = "https://localhost:7272/api/Answer";
 
         // Phương thức để lấy danh sách câu trả lời
         public async Task<IActionResult> Index()
         {
-            using (HttpClient client = new HttpClient())
+            using (HttpClient client = _httpClient)
             {
                 // Gửi yêu cầu GET đến API
                 using (HttpResponseMessage res = await client.GetAsync(url))

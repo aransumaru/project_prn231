@@ -89,21 +89,19 @@
 <body>
     <div class="login-container">
         <div class="login-box">
-            <img src="/Image/book.jpg" alt="Books" class="book-image">
-            <h2>Book Stores Login</h2>
+            <h2>Đẳng Nhập</h2>
             <form action="/Login" method="post">
                 <div class="input-group">
-                    <input type="email" name="Email" placeholder="Username" required />
+                    <input type="email" name="Email" placeholder="Địa chỉ email" required />
                 </div>
                 <div class="input-group">
-                    <input type="password" name="Password" placeholder="Password" required />
+                    <input type="password" name="Password" placeholder="Mật khẩu" required />
                 </div>
-                <button type="submit" class="login-btn">Login</button>
+                <button type="submit" class="login-btn">Đăng Nhập</button>
             </form>
             <div class="signup-link">
-                <a href="/register">Sign up</a>
+                <a href="/register">Đăng Ký</a>
             </div>
-
         </div>
         @if (!ViewData.ModelState.IsValid)
         {

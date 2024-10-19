@@ -10,14 +10,19 @@ namespace project_prn231.Controllers
 
     public class HomeController : Controller
     {
-        private readonly string url = "https://localhost:7272/api/Category";
-
-        public async Task<IActionResult> Index()
+        public HomeController(HttpClient httpClient)
         {
-            using (HttpClient client = new HttpClient())
+            _httpClient = httpClient ?? throw new ArgumentNullException(nameof(httpClient));
+        }
+        private readonly HttpClient _httpClient;
+        private readonly string urlCategory = "https://localhost:7272/api/Category";
+
+        public async Task<IActionResult> Index(int pageNumber = 0, int pageSize = 0, string searchTerm = "", int? categoryId = null)
+        {
+            using (HttpClient client = _httpClient)
             {
                 // Gửi yêu cầu GET đến API
-                using (HttpResponseMessage res = await client.GetAsync(url))
+                using (HttpResponseMessage res = await client.GetAsync(urlCategory))
                 {
                     // Kiểm tra xem yêu cầu có thành công không
                     if (res.IsSuccessStatusCode)

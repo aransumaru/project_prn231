@@ -1,0 +1,45 @@
+﻿@model List<project_prn231.Models.Question>
+
+@{
+    ViewBag.Title = "Danh sách câu hỏi";
+}
+
+<div class="container mt-4">
+    <h2>Danh sách câu hỏi</h2>
+    <a href="/Admin/CreateQuestion" class="btn btn-success">Thêm câu hỏi mới</a>
+    <table class="table table-striped">
+        <thead class="thead-dark">
+            <tr>
+                <th>ID</th>
+                <th>Nội dung câu hỏi</th>
+                <th>Ảnh</th>
+                <th>Hành động</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var question in Model)
+            {
+                <tr>
+                    <td>@question.QuestionId</td>
+                    <td>@question.QuestionText</td>
+                    <td>
+                        <img src="@question.QuestionImage" alt="Hình ảnh câu hỏi" style="width: 100px; height: auto;" />
+                    </td>
+                    <td>
+                        <a href="/Answer/@question.QuestionId" class="btn btn-info">Thông tin</a>
+                        <a href="/Admin/EditQuestion/@question.QuestionId" class="btn btn-warning">Sửa</a>
+                        <a href="/Admin/DeleteQuestion/@question.QuestionId" class="btn btn-danger" onclick="return confirm('Bạn có chắc chắn muốn xóa không?');">Xóa</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+
+</div>
+
+<!-- Thêm link đến Bootstrap JS và CSS nếu chưa có -->
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
