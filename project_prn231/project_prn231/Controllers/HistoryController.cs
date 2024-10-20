@@ -21,7 +21,6 @@ namespace project_prn231.Controllers
                 return BadRequest("Thông tin người dùng không hợp lệ.");
             }
 
-            // Gọi API để lấy danh sách bài thi
             using (HttpResponseMessage res = await _httpClient.GetAsync($"{urlExam}/{userId}"))
             {
                 if (res.IsSuccessStatusCode)

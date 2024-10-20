@@ -17,17 +17,14 @@ namespace project_prn231.Controllers
         }
         public async Task<IActionResult> Submit(int categoryId, List<int> selectedAnswers)
         {
-            // Lấy PkUserId từ session
-            int? userId = HttpContext.Session.GetInt32("UserId"); // đảm bảo bạn đã thiết lập session này
+            int? userId = HttpContext.Session.GetInt32("UserId");
             if (userId == null)
             {
                 return BadRequest("Thông tin người dùng không hợp lệ.");
             }
 
-            // Tính số điểm
             int point = 0;
 
-            // Kiểm tra từng answer xem có đúng không
             foreach (var answerId in selectedAnswers)
             {
                 using (HttpResponseMessage res = await _httpClient.GetAsync($"{urlAnswer}/{answerId}"))
@@ -44,7 +41,6 @@ namespace project_prn231.Controllers
                 }
             }
 
-            // Tạo đối tượng Exam
             var exam = new Exam
             {
                 PkUserId = userId,
@@ -53,7 +49,6 @@ namespace project_prn231.Controllers
                 Point = point
             };
 
-            // Gửi yêu cầu POST đến API để lưu exam
             using (HttpResponseMessage res = await _httpClient.PostAsJsonAsync(urlExam, exam))
             {
                 if (res.IsSuccessStatusCode)

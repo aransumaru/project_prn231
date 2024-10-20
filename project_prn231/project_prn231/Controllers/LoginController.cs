@@ -17,10 +17,10 @@ namespace project_prn231.Controllers
             var response = await _httpClient.PostAsJsonAsync("https://localhost:7272/api/User/login", loginRequest);
             if (response.IsSuccessStatusCode)
             {
-                var user = await response.Content.ReadFromJsonAsync<UserDto>(); // Đọc dữ liệu trả về
+                var user = await response.Content.ReadFromJsonAsync<UserDto>();
                 HttpContext.Session.SetInt32("UserId", user.UserId);
                 HttpContext.Session.SetString("IsAdmin", user.IsAdmin.ToString());
-                return RedirectToAction("Index", "Home"); // Điều hướng đến trang chính sau khi đăng nhập thành công
+                return RedirectToAction("Index", "Home");
             }
             else
             {

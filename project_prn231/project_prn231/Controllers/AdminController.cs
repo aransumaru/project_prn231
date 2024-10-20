@@ -2,6 +2,7 @@
 using Newtonsoft.Json;
 using project_prn231.Models;
 using System.Net.Http;
+using System.Text;
 
 namespace project_prn231.Controllers
 {
@@ -13,37 +14,132 @@ namespace project_prn231.Controllers
             _httpClient = httpClient ?? throw new ArgumentNullException(nameof(httpClient));
         }
         private readonly HttpClient _httpClient;
-        private readonly string urlQuestion = "https://localhost:7272/api/Question"; // Địa chỉ API
+        private readonly string urlQuestion = "https://localhost:7272/api/Question";
+        private readonly string urlCategory = "https://localhost:7272/api/Category";
 
-        public async Task<IActionResult> Index() // Phương thức Index để hiển thị danh sách câu hỏi
+        public async Task<IActionResult> Index()
         {
             using (HttpClient client = _httpClient)
             {
-                // Gửi yêu cầu GET đến API
                 using (HttpResponseMessage res = await client.GetAsync(urlQuestion))
                 {
-                    // Kiểm tra xem yêu cầu có thành công không
                     if (res.IsSuccessStatusCode)
                     {
                         using (HttpContent content = res.Content)
                         {
-                            // Đọc nội dung trả về dưới dạng chuỗi
                             string result = await content.ReadAsStringAsync();
-
-                            // Deserialize chuỗi JSON thành danh sách Question
                             List<Question> questions = JsonConvert.DeserializeObject<List<Question>>(result);
-
-                            // Trả về view với danh sách câu hỏi
                             return View(questions);
                         }
                     }
                     else
                     {
-                        // Xử lý trường hợp yêu cầu không thành công (có thể trả về một view lỗi)
                         return NotFound("Không tìm thấy danh sách câu hỏi.");
                     }
                 }
             }
         }
+        [HttpPost("Create")]
+        public async Task<IActionResult> Create([FromForm] Question question)
+        {
+            if (question == null)
+            {
+                return BadRequest("Thông tin câu hỏi không hợp lệ.");
+            }
+            var json = JsonConvert.SerializeObject(question);
+            var content = new StringContent(json, Encoding.UTF8, "application/json");
+            using (HttpResponseMessage res = await _httpClient.PostAsync(urlQuestion, content))
+            {
+                if (res.IsSuccessStatusCode)
+                {
+                    return RedirectToAction("Index");
+                }
+                return BadRequest("Có lỗi xảy ra khi thêm câu hỏi.");
+            }
+        }
+        [HttpGet("Create")]
+        public async Task<IActionResult> Create()
+        {
+            using (HttpResponseMessage res = await _httpClient.GetAsync(urlCategory))
+            {
+                if (res.IsSuccessStatusCode)
+                {
+                    string result = await res.Content.ReadAsStringAsync();
+                    var categories = JsonConvert.DeserializeObject<List<Category>>(result);
+                    ViewBag.Categories = categories;
+                }
+                else
+                {
+                    ViewBag.Categories = new List<Category>();
+                }
+            }
+            return View();
+        }
+        [HttpGet("Update/{id}")]
+        public async Task<IActionResult> Update(int id)
+        {
+            using (HttpResponseMessage res = await _httpClient.GetAsync($"{urlQuestion}/{id}"))
+            {
+                if (res.IsSuccessStatusCode)
+                {
+                    string result = await res.Content.ReadAsStringAsync();
+                    var question = JsonConvert.DeserializeObject<Question>(result);
+
+                    using (HttpResponseMessage categoryRes = await _httpClient.GetAsync(urlCategory))
+                    {
+                        if (categoryRes.IsSuccessStatusCode)
+                        {
+                            string categoryResult = await categoryRes.Content.ReadAsStringAsync();
+                            var categories = JsonConvert.DeserializeObject<List<Category>>(categoryResult);
+                            ViewBag.Categories = categories;
+                        }
+                    }
+
+                    return View(question);
+                }
+                else
+                {
+                    return NotFound($"Câu hỏi với ID {id} không tồn tại.");
+                }
+            }
+        }
+
+        [HttpPost("Update/{id}")]
+        public async Task<IActionResult> Update(int id, [FromForm] Question question)
+        {
+            if (id != question.QuestionId)
+            {
+                return BadRequest("ID không khớp.");
+            }
+
+            using (HttpResponseMessage res = await _httpClient.PutAsJsonAsync($"{urlQuestion}/{id}", question))
+            {
+                if (res.IsSuccessStatusCode)
+                {
+                    return RedirectToAction("Index");
+                }
+                else
+                {
+                    return BadRequest("Cập nhật không thành công.");
+                }
+            }
+        }
+
+        [HttpGet("Delete/{id}")]
+        public async Task<IActionResult> Delete(int id)
+        {
+            using (HttpResponseMessage res = await _httpClient.DeleteAsync($"{urlQuestion}/{id}"))
+            {
+                if (res.IsSuccessStatusCode)
+                {
+                    return RedirectToAction("Index");
+                }
+                else
+                {
+                    return BadRequest("Xóa không thành công.");
+                }
+            }
+        }
+
     }
 }

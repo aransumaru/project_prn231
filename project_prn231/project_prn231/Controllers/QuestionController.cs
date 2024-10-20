@@ -20,7 +20,6 @@ namespace project_prn231.Controllers
         {
             using (HttpClient client = _httpClient)
             {
-                // Gửi yêu cầu GET đến API với categoryId
                 using (HttpResponseMessage res = await client.GetAsync($"{urlQuestion}?categoryId={categoryId}"))
                 {
                     if (res.IsSuccessStatusCode)
@@ -28,7 +27,6 @@ namespace project_prn231.Controllers
                         string result = await res.Content.ReadAsStringAsync();
                         List<Question> questions = JsonConvert.DeserializeObject<List<Question>>(result);
 
-                        // Trả về view với danh sách câu hỏi
                         return View(questions);
                     }
                     else

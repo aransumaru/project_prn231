@@ -69,7 +69,7 @@ namespace project_prn231_api.Controllers
         }
 
         // PUT: api/answer/{id}
-        [HttpPut("{id}")]
+        [HttpPut("Update/{id}")]
         public IActionResult Update(int id, [FromBody] Answer answer)
         {
             if (answer == null)
@@ -96,7 +96,7 @@ namespace project_prn231_api.Controllers
         }
 
         // DELETE: api/answer/{id}
-        [HttpDelete("{id}")]
+        [HttpDelete("Delete/{id}")]
         public IActionResult Delete(int id)
         {
             var answer = context.Answers.Find(id);

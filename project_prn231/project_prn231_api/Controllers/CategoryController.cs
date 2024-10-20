@@ -16,16 +16,16 @@ namespace project_prn231_api.Controllers
         public IActionResult GetAll()
         {
             var categories = context.Categories
-                .Select(x => new
+                .Select(c => new
                 {
-                    x.CategoryId,
-                    x.CategoryName
+                    c.CategoryId,
+                    c.CategoryName
                 })
+                .Distinct()
                 .ToList();
 
             return Ok(categories);
         }
-
         // GET: api/category/{id}
         [HttpGet("{id}")]
         public IActionResult GetById(int id)

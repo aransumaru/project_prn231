@@ -6,7 +6,7 @@
 
 <div class="container mt-4">
     <h2>Danh sách câu hỏi</h2>
-    <a href="/Admin/CreateQuestion" class="btn btn-success">Thêm câu hỏi mới</a>
+    <a href="/Admin/Create" class="btn btn-success">Thêm câu hỏi mới</a>
     <table class="table table-striped">
         <thead class="thead-dark">
             <tr>
@@ -27,8 +27,8 @@
                     </td>
                     <td>
                         <a href="/Answer/@question.QuestionId" class="btn btn-info">Thông tin</a>
-                        <a href="/Admin/EditQuestion/@question.QuestionId" class="btn btn-warning">Sửa</a>
-                        <a href="/Admin/DeleteQuestion/@question.QuestionId" class="btn btn-danger" onclick="return confirm('Bạn có chắc chắn muốn xóa không?');">Xóa</a>
+                        <a href="/Admin/Update/@question.QuestionId" class="btn btn-warning">Sửa</a>
+                        <a href="/Admin/Delete/@question.QuestionId" class="btn btn-danger" onclick="return confirm('Bạn có chắc chắn muốn xóa không?');">Xóa</a>
                     </td>
                 </tr>
             }
