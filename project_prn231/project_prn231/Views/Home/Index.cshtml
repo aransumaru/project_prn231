@@ -33,12 +33,24 @@
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="/Home">Trang chủ</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/Login">Đăng nhập</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/Register">Đăng ký</a>
-                    </li>
+                    @if (Context.Session.GetString("UserId") != null)
+                    {
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Logout">Đăng xuất</a>
+                        </li>
+                    }
+                    else
+                    {
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Login">Đăng nhập</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Register">Đăng ký</a>
+                        </li>
+                    }
+
+
+
                 </ul>
             </div>
         </div>
@@ -56,7 +68,7 @@
                             <p class="card-text">Kiểm tra kỹ năng thi bằng lái @category.CategoryName.</p>
                             @if (Context.Session.GetString("UserId") != null)
                             {
-                                <a href="/Question/Test/@category.CategoryId" class="btn btn-primary">Bắt đầu</a>
+                                <a href="/Question?categoryId=@category.CategoryId" class="btn btn-primary">Bắt đầu</a>
                             }
                             else
                             {

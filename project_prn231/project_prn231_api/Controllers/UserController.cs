@@ -64,16 +64,15 @@ namespace project_prn231_api.Controllers
             {
                 return Conflict("Email đã được sử dụng.");
             }
+            var existingUser = context.Users.FirstOrDefault(u => u.Username == user.Username);
+            if (existingUser != null)
+            {
+                return Conflict("Người dùng đã tồn tại.");
+            }
             context.Users.Add(user);
             context.SaveChanges();
 
-            return CreatedAtAction(nameof(GetById), new { id = user.UserId }, new
-            {
-                user.UserId,
-                user.Username,
-                user.Email,
-                user.IsAdmin
-            });
+            return Ok("Thêm thành công");
         }
 
         // PUT: api/user/{id}
@@ -126,15 +125,6 @@ namespace project_prn231_api.Controllers
                 return BadRequest("Không thể xóa người dùng vì họ có bài thi liên kết.");
             }
 
-            if (context.ExamResults.Any(er => er.PkExamId != null && context.Exams.Any(e => e.ExamId == er.PkExamId && e.PkUserId == id)))
-            {
-                return BadRequest("Không thể xóa người dùng vì họ có kết quả thi liên kết.");
-            }
-
-            if (context.ExamResultHistorys.Any(eh => eh.PkExamId != null && context.Exams.Any(e => e.ExamId == eh.PkExamId && e.PkUserId == id)))
-            {
-                return BadRequest("Không thể xóa người dùng vì họ có lịch sử thi liên kết.");
-            }
 
             context.Users.Remove(user);
             context.SaveChanges();

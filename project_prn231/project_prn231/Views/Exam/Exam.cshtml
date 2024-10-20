@@ -1,0 +1,33 @@
+﻿@model project_prn231.Models.Exam // Đảm bảo rằng bạn đã định nghĩa model Exam trong dự án của mình
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kết quả bài thi</title>
+    <link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container mt-4">
+        <h1 class="text-center">Kết quả bài thi</h1>
+
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Thông tin bài thi</h5>
+                <p><strong>ID Người dùng:</strong> @Model.PkUserId.</p>
+                <p><strong>ID Danh mục:</strong> @Model.PkCategoryId</p>
+                <p><strong>Ngày thi:</strong> @(Model.ExamDate.HasValue ? Model.ExamDate.Value.ToString("dd/MM/yyyy HH:mm") : "Không có dữ liệu")</p>
+                <p><strong>Số điểm đạt được:</strong> @Model.Point</p>
+            </div>
+        </div>
+
+        <div class="mt-4">
+            <h5>Cảm ơn bạn đã tham gia bài thi!</h5>
+            <a href="@Url.Action("Index", "Home")" class="btn btn-primary">Về trang chủ</a>
+        </div>
+    </div>
+
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

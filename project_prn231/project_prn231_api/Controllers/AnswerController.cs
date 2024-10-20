@@ -105,12 +105,6 @@ namespace project_prn231_api.Controllers
                 return NotFound($"Câu trả lời với ID {id} không tồn tại.");
             }
 
-            // Kiểm tra các ràng buộc khóa ngoại trước khi xóa
-            var relatedExamResults = context.ExamResults.Any(er => er.PkAnswerId == id);
-            if (relatedExamResults)
-            {
-                return BadRequest("Không thể xóa câu trả lời vì nó đang được sử dụng trong các kết quả kiểm tra.");
-            }
 
             context.Answers.Remove(answer);
             context.SaveChanges();

@@ -13,20 +13,34 @@ namespace project_prn231_api.Controllers
 
         // GET: api/question
         [HttpGet]
-        public IActionResult GetAll()
+        public IActionResult GetAll(int? categoryId = null)
         {
-            var questions = context.Questions
+            var questionsQuery = context.Questions.AsQueryable();
+            if (categoryId.HasValue)
+            {
+                questionsQuery = questionsQuery.Where(q => q.PkCategoryId == categoryId.Value);
+            }
+
+            var questions = questionsQuery
                 .Select(x => new
                 {
                     x.QuestionId,
                     x.PkCategoryId,
                     x.QuestionText,
-                    x.QuestionImage
+                    x.QuestionImage,
+                    Answers = x.Answers.Select(a => new
+                    {
+                        a.AnswerId,
+                        a.AnswerText,
+                        a.AnswerImage,
+                        a.IsCorrect
+                    }).ToList()
                 })
                 .ToList();
 
             return Ok(questions);
         }
+
 
         // GET: api/question/{id}
         [HttpGet("{id}")]
@@ -129,14 +143,6 @@ namespace project_prn231_api.Controllers
                 return NotFound($"Câu hỏi với ID {id} không tồn tại.");
             }
 
-            // Kiểm tra xem có khóa ngoại nào liên quan đến câu hỏi không
-            var hasOtherForeignKeys = context.ExamResults.Any(er => er.PkQuestionId == id); // Kiểm tra bảng ExamResults
-
-            if (hasOtherForeignKeys)
-            {
-                return BadRequest("Không thể xóa câu hỏi này vì nó đang được sử dụng trong kết quả thi.");
-            }
-
             // Nếu câu hỏi có các answer liên quan, xóa tất cả answer đó
             if (question.Answers.Any())
             {
@@ -149,6 +155,8 @@ namespace project_prn231_api.Controllers
 
             return Ok("Xóa thành công");
         }
+
+
 
 
     }

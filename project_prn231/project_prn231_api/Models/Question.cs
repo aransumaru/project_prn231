@@ -8,7 +8,6 @@ namespace project_prn231_api.Models
         public Question()
         {
             Answers = new HashSet<Answer>();
-            ExamResults = new HashSet<ExamResult>();
         }
 
         public int QuestionId { get; set; }
@@ -18,6 +17,5 @@ namespace project_prn231_api.Models
 
         public virtual Category? PkCategory { get; set; }
         public virtual ICollection<Answer> Answers { get; set; }
-        public virtual ICollection<ExamResult> ExamResults { get; set; }
     }
 }

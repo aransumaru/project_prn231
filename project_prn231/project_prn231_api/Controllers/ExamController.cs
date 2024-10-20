@@ -22,6 +22,7 @@ namespace project_prn231_api.Controllers
                     x.PkUserId,
                     x.PkCategoryId,
                     x.ExamDate,
+                    x.Point,
                     CategoryName = x.PkCategory.CategoryName // Nếu cần hiển thị tên danh mục
                 })
                 .ToList();
@@ -41,6 +42,7 @@ namespace project_prn231_api.Controllers
                     x.PkUserId,
                     x.PkCategoryId,
                     x.ExamDate,
+                    x.Point,
                     CategoryName = x.PkCategory.CategoryName // Nếu cần hiển thị tên danh mục
                 })
                 .FirstOrDefault();
@@ -86,6 +88,7 @@ namespace project_prn231_api.Controllers
             existingExam.PkUserId = exam.PkUserId;
             existingExam.PkCategoryId = exam.PkCategoryId;
             existingExam.ExamDate = exam.ExamDate;
+            existingExam.Point = exam.Point;
             context.SaveChanges();
 
             return Ok(existingExam);
@@ -101,18 +104,40 @@ namespace project_prn231_api.Controllers
                 return NotFound($"Bài kiểm tra với ID {id} không tồn tại.");
             }
 
-            // Kiểm tra các ràng buộc khóa ngoại trước khi xóa
-            var relatedExamResults = context.ExamResults.Any(er => er.PkExamId == id);
-            var relatedExamResultHistories = context.ExamResultHistorys.Any(eh => eh.PkExamId == id);
-            if (relatedExamResults || relatedExamResultHistories)
-            {
-                return BadRequest("Không thể xóa bài kiểm tra vì nó đang được sử dụng trong kết quả kiểm tra hoặc lịch sử kiểm tra.");
-            }
 
             context.Exams.Remove(exam);
             context.SaveChanges();
 
             return NoContent();
         }
+
+        // GET: api/exam/user/{userId}
+        [HttpGet("User/{userId}")]
+        public IActionResult GetByUserId(int userId)
+        {
+            var exams = context.Exams
+                .Include(x => x.PkUser) // Lấy thông tin User
+                .Include(x => x.PkCategory) // Lấy thông tin Category
+                .Where(x => x.PkUserId == userId)
+                .Select(x => new
+                {
+                    x.ExamId,
+                    x.PkUserId,
+                    Username = x.PkUser.Username, // Lấy Username từ PkUser
+                    x.PkCategoryId,
+                    CategoryName = x.PkCategory.CategoryName, // Lấy CategoryName từ PkCategory
+                    x.ExamDate,
+                    x.Point
+                })
+                .ToList();
+
+            if (!exams.Any())
+            {
+                return NotFound($"Không tìm thấy bài thi nào cho người dùng với ID {userId}.");
+            }
+
+            return Ok(exams);
+        }
+
     }
 }

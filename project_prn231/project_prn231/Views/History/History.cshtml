@@ -1,0 +1,56 @@
+﻿@model List<project_prn231.Models.Exam>
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lịch sử bài thi</title>
+        <link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div class="container mt-4">
+            <h1 class="text-center">Lịch sử bài thi</h1>
+
+            <div class="mt-4">
+
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>Loại bài thi</th>
+                                <th>Ngày thi</th>
+                                <th>Số điểm</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        @foreach (var exam in Model)
+                        {
+                            <tr>
+
+                                <td>
+                                    @{
+                                       string categoryName = exam.PkCategoryId switch
+                                       {
+                                           1 => "Ô tô",
+                                           2 => "Xe máy",
+                                       };
+                                    }
+                                    @categoryName
+                                </td>
+                                <td>@(exam.ExamDate.HasValue ? exam.ExamDate.Value.ToString("dd/MM/yyyy HH:mm") : "Không có dữ liệu")</td>
+                                <td>@exam.Point</td>
+                            </tr>
+                        }
+                        </tbody>
+                    </table>
+            
+            </div>
+
+            <div class="mt-4">
+                <a href="@Url.Action("Index", "Home")" class="btn btn-primary">Về trang chủ</a>
+            </div>
+        </div>
+
+        <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>

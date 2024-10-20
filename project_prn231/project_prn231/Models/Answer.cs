@@ -5,10 +5,6 @@ namespace project_prn231.Models
 {
     public partial class Answer
     {
-        public Answer()
-        {
-            ExamResults = new HashSet<ExamResult>();
-        }
 
         public int AnswerId { get; set; }
         public int? PkQuestionId { get; set; }
@@ -17,6 +13,5 @@ namespace project_prn231.Models
         public bool? IsCorrect { get; set; }
 
         public virtual Question? PkQuestion { get; set; }
-        public virtual ICollection<ExamResult> ExamResults { get; set; }
     }
 }

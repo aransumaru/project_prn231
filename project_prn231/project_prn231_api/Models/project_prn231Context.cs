@@ -19,18 +19,16 @@ namespace project_prn231_api.Models
         public virtual DbSet<Answer> Answers { get; set; } = null!;
         public virtual DbSet<Category> Categories { get; set; } = null!;
         public virtual DbSet<Exam> Exams { get; set; } = null!;
-        public virtual DbSet<ExamResult> ExamResults { get; set; } = null!;
-        public virtual DbSet<ExamResultHistory> ExamResultHistorys { get; set; } = null!;
         public virtual DbSet<Question> Questions { get; set; } = null!;
         public virtual DbSet<User> Users { get; set; } = null!;
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            var builder = new ConfigurationBuilder()
-                                           .SetBasePath(Directory.GetCurrentDirectory())
-                                           .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true);
-            IConfigurationRoot configuration = builder.Build();
-            optionsBuilder.UseSqlServer(configuration.GetConnectionString("DefaultConnection"));
+            if (!optionsBuilder.IsConfigured)
+            {
+#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
+                optionsBuilder.UseSqlServer("server=DESKTOP-808DOOE;database=project_prn231;uid=sa;pwd=123;TrustServerCertificate=True;");
+            }
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -75,45 +73,6 @@ namespace project_prn231_api.Models
                     .WithMany(p => p.Exams)
                     .HasForeignKey(d => d.PkUserId)
                     .HasConstraintName("FK__Exams__PK_UserId__693CA210");
-            });
-
-            modelBuilder.Entity<ExamResult>(entity =>
-            {
-                entity.Property(e => e.PkAnswerId).HasColumnName("PK_AnswerId");
-
-                entity.Property(e => e.PkExamId).HasColumnName("PK_ExamId");
-
-                entity.Property(e => e.PkQuestionId).HasColumnName("PK_QuestionId");
-
-                entity.HasOne(d => d.PkAnswer)
-                    .WithMany(p => p.ExamResults)
-                    .HasForeignKey(d => d.PkAnswerId)
-                    .HasConstraintName("FK__ExamResul__PK_An__6FE99F9F");
-
-                entity.HasOne(d => d.PkExam)
-                    .WithMany(p => p.ExamResults)
-                    .HasForeignKey(d => d.PkExamId)
-                    .HasConstraintName("FK__ExamResul__PK_Ex__6E01572D");
-
-                entity.HasOne(d => d.PkQuestion)
-                    .WithMany(p => p.ExamResults)
-                    .HasForeignKey(d => d.PkQuestionId)
-                    .HasConstraintName("FK__ExamResul__PK_Qu__6EF57B66");
-            });
-
-            modelBuilder.Entity<ExamResultHistory>(entity =>
-            {
-                entity.HasKey(e => e.ExamHistoryId)
-                    .HasName("PK__ExamResu__DDE33612B21CCB87");
-
-                entity.Property(e => e.PkExamId).HasColumnName("PK_ExamId");
-
-                entity.Property(e => e.Result).HasMaxLength(50);
-
-                entity.HasOne(d => d.PkExam)
-                    .WithMany(p => p.ExamResultHistories)
-                    .HasForeignKey(d => d.PkExamId)
-                    .HasConstraintName("FK__ExamResul__PK_Ex__72C60C4A");
             });
 
             modelBuilder.Entity<Question>(entity =>

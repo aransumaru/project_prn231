@@ -237,157 +237,15 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "project_prn231_api.Controllers.ExamResultController",
-    "Method": "GetAll",
-    "RelativePath": "api/ExamResult",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "project_prn231_api.Controllers.ExamResultController",
-    "Method": "Insert",
-    "RelativePath": "api/ExamResult",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "examResult",
-        "Type": "project_prn231_api.Models.ExamResult",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "project_prn231_api.Controllers.ExamResultController",
-    "Method": "GetById",
-    "RelativePath": "api/ExamResult/{id}",
+    "ContainingType": "project_prn231_api.Controllers.ExamController",
+    "Method": "GetByUserId",
+    "RelativePath": "api/Exam/User/{userId}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "project_prn231_api.Controllers.ExamResultController",
-    "Method": "Update",
-    "RelativePath": "api/ExamResult/{id}",
-    "HttpMethod": "PUT",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      },
-      {
-        "Name": "examResult",
-        "Type": "project_prn231_api.Models.ExamResult",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "project_prn231_api.Controllers.ExamResultController",
-    "Method": "DeleteExamResult",
-    "RelativePath": "api/ExamResult/{id}",
-    "HttpMethod": "DELETE",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "project_prn231_api.Controllers.ExamResultHistoryController",
-    "Method": "GetAll",
-    "RelativePath": "api/ExamResultHistory",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "project_prn231_api.Controllers.ExamResultHistoryController",
-    "Method": "Insert",
-    "RelativePath": "api/ExamResultHistory",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "examResultHistory",
-        "Type": "project_prn231_api.Models.ExamResultHistory",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "project_prn231_api.Controllers.ExamResultHistoryController",
-    "Method": "GetById",
-    "RelativePath": "api/ExamResultHistory/{id}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "project_prn231_api.Controllers.ExamResultHistoryController",
-    "Method": "Update",
-    "RelativePath": "api/ExamResultHistory/{id}",
-    "HttpMethod": "PUT",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      },
-      {
-        "Name": "examResultHistory",
-        "Type": "project_prn231_api.Models.ExamResultHistory",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "project_prn231_api.Controllers.ExamResultHistoryController",
-    "Method": "DeleteExamResultHistory",
-    "RelativePath": "api/ExamResultHistory/{id}",
-    "HttpMethod": "DELETE",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
+        "Name": "userId",
         "Type": "System.Int32",
         "IsRequired": true
       }
@@ -401,7 +259,13 @@
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
-    "Parameters": [],
+    "Parameters": [
+      {
+        "Name": "categoryId",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
     "ReturnTypes": []
   },
   {
