@@ -1,0 +1,38 @@
+﻿@model project_prn231.Models.Answer
+
+@{
+    ViewBag.Title = "Thêm câu trả lời mới";
+}
+@if (Context.Session.GetString("IsAdmin") == "True")
+{
+<div class="container mt-4">
+    <h2>Thêm câu trả lời mới</h2>
+    <form asp-action="Create" method="post" enctype="multipart/form-data">
+        <div class="form-group">
+            <label for="AnswerText">Nội dung câu trả lời:</label>
+            <input type="text" class="form-control" id="AnswerText" name="AnswerText" required />
+        </div>
+        <div class="form-group">
+            <label for="AnswerImage">Ảnh câu trả lời (nếu có):</label>
+            <input type="file" class="form-control-file" id="AnswerImage" name="AnswerImage" />
+        </div>
+        <div class="form-group">
+            <label for="IsCorrect">Có đúng không?</label>
+            <select class="form-control" id="IsCorrect" name="IsCorrect" required>
+                <option value="true">Đúng</option>
+                <option value="false">Sai</option>
+            </select>
+        </div>
+        <button type="submit" class="btn btn-success">Thêm câu trả lời</button>
+        <a href="/Answer" class="btn btn-secondary">Quay lại</a>
+    </form>
+</div>
+}
+else
+{
+<p class="text-danger">Bạn cần đăng nhập với tài khoản admin để thêm câu hỏi.</p>
+}
+<!-- Thêm link đến Bootstrap CSS nếu chưa có -->
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+<script src="https://code.jquery.com/jquery-3.5.2.slim.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>

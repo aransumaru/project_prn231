@@ -6,7 +6,7 @@ using System.Net.Http;
 
 namespace project_prn231.Controllers
 {
-    [Route("Home")]
+    [Route("")]
 
     public class HomeController : Controller
     {
@@ -19,6 +19,8 @@ namespace project_prn231.Controllers
 
         public async Task<IActionResult> Index()
         {
+
+
             using (HttpClient client = _httpClient)
             {
                 using (HttpResponseMessage res = await client.GetAsync(urlCategory))

@@ -36,7 +36,7 @@
                                         <li class="list-group-item">
                                             <input type="checkbox" name="selectedAnswers" value="@answer.AnswerId" />
                                             @answer.AnswerText
-                                            <span style="font-size: 0.8em; color: gray;">(Is Correct: @answer.IsCorrect)</span>
+                                           
                                             @if (!string.IsNullOrEmpty(answer.AnswerImage))
                                             {
                                                 <img src="@answer.AnswerImage" alt="Hình ảnh câu trả lời" class="img-fluid" style="max-width: 100px;">
@@ -51,6 +51,7 @@
                 }
             </div>
             <button type="submit" class="btn btn-primary">Nộp bài</button>
+            <a href="/" class="btn btn-secondary">Trở về</a>
         </form>
     </div>
 

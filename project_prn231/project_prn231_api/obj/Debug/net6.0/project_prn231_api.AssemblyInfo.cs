@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("project_prn231_api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+712f0f1d443a550f1e1e575bb6aab4a38cf89312")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+60e9c243d53257cc76d9fa6d6f73822c7c8f0541")]
 [assembly: System.Reflection.AssemblyProductAttribute("project_prn231_api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("project_prn231_api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

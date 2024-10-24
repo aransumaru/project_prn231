@@ -19,9 +19,16 @@ namespace project_prn231.Controllers
 
         public async Task<IActionResult> Index()
         {
+            int? userId = HttpContext.Session.GetInt32("UserId");
+
+            if (!userId.HasValue)
+            {
+                return RedirectToAction("Login", "Login");
+            }
             using (HttpClient client = _httpClient)
             {
-                using (HttpResponseMessage res = await client.GetAsync(urlQuestion))
+                string url = $"{urlQuestion}/GetByUser?userId={userId.Value}";
+                using (HttpResponseMessage res = await client.GetAsync(url))
                 {
                     if (res.IsSuccessStatusCode)
                     {
@@ -46,20 +53,45 @@ namespace project_prn231.Controllers
             {
                 return BadRequest("Thông tin câu hỏi không hợp lệ.");
             }
-            var json = JsonConvert.SerializeObject(question);
-            var content = new StringContent(json, Encoding.UTF8, "application/json");
-            using (HttpResponseMessage res = await _httpClient.PostAsync(urlQuestion, content))
+            try
             {
-                if (res.IsSuccessStatusCode)
+                int? userId = HttpContext.Session.GetInt32("UserId");
+
+                if (!userId.HasValue)
                 {
-                    return RedirectToAction("Index");
+                    return RedirectToAction("Login", "Login");
                 }
-                return BadRequest("Có lỗi xảy ra khi thêm câu hỏi.");
+
+                // Gán Pk_UserId vào câu hỏi
+                question.PkUserId = userId.Value;
+                var json = JsonConvert.SerializeObject(question);
+                var content = new StringContent(json, Encoding.UTF8, "application/json");
+                using (HttpResponseMessage res = await _httpClient.PostAsync(urlQuestion, content))
+                {
+                    if (res.IsSuccessStatusCode)
+                    {
+                        return RedirectToAction("Index");
+                    }
+                    string questionDetails = JsonConvert.SerializeObject(question, Formatting.Indented);
+                    return BadRequest("Có lỗi xảy ra khi thêm câu hỏi: " + res.ReasonPhrase + "\nThông tin câu hỏi: " + questionDetails);
+                }
             }
+            catch(Exception ex)
+            {
+                return StatusCode(500, "Đã xảy ra lỗi: " + ex.Message);
+            }
+
         }
         [HttpGet("Create")]
         public async Task<IActionResult> Create()
         {
+            int? userId = HttpContext.Session.GetInt32("UserId");
+
+            if (!userId.HasValue)
+            {
+                return RedirectToAction("Login", "Login");
+            }
+
             using (HttpResponseMessage res = await _httpClient.GetAsync(urlCategory))
             {
                 if (res.IsSuccessStatusCode)
@@ -78,6 +110,12 @@ namespace project_prn231.Controllers
         [HttpGet("Update/{id}")]
         public async Task<IActionResult> Update(int id)
         {
+            int? userId = HttpContext.Session.GetInt32("UserId");
+
+            if (!userId.HasValue)
+            {
+                return RedirectToAction("Login", "Login");
+            }
             using (HttpResponseMessage res = await _httpClient.GetAsync($"{urlQuestion}/{id}"))
             {
                 if (res.IsSuccessStatusCode)
@@ -111,7 +149,15 @@ namespace project_prn231.Controllers
             {
                 return BadRequest("ID không khớp.");
             }
+            int? userId = HttpContext.Session.GetInt32("UserId");
 
+            if (!userId.HasValue)
+            {
+                return RedirectToAction("Login", "Login");
+            }
+
+            // Gán Pk_UserId vào câu hỏi
+            question.PkUserId = userId.Value;
             using (HttpResponseMessage res = await _httpClient.PutAsJsonAsync($"{urlQuestion}/{id}", question))
             {
                 if (res.IsSuccessStatusCode)
@@ -128,6 +174,12 @@ namespace project_prn231.Controllers
         [HttpGet("Delete/{id}")]
         public async Task<IActionResult> Delete(int id)
         {
+            int? userId = HttpContext.Session.GetInt32("UserId");
+
+            if (!userId.HasValue)
+            {
+                return RedirectToAction("Login", "Login");
+            }
             using (HttpResponseMessage res = await _httpClient.DeleteAsync($"{urlQuestion}/{id}"))
             {
                 if (res.IsSuccessStatusCode)
@@ -137,6 +189,33 @@ namespace project_prn231.Controllers
                 else
                 {
                     return BadRequest("Xóa không thành công.");
+                }
+            }
+        }
+        // GET: Admin/Detail/{id}
+        [HttpGet("Detail/{id}")]
+        public async Task<IActionResult> Detail(int id)
+        {
+            int? userId = HttpContext.Session.GetInt32("UserId");
+
+            if (!userId.HasValue)
+            {
+                return RedirectToAction("Login", "Login");
+            }
+            using (HttpResponseMessage res = await _httpClient.GetAsync($"{urlQuestion}/{id}"))
+            {
+                if (res.IsSuccessStatusCode)
+                {
+                    string result = await res.Content.ReadAsStringAsync();
+
+                    // Deserialize dữ liệu thành object Question chứa cả Answers
+                    var questionDetail = JsonConvert.DeserializeObject<Question>(result);
+
+                    return View(questionDetail); // Trả về view với thông tin chi tiết
+                }
+                else
+                {
+                    return NotFound("Không tìm thấy thông tin câu hỏi.");
                 }
             }
         }

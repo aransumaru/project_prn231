@@ -4,32 +4,40 @@
     ViewBag.Title = "Thêm câu hỏi mới";
 }
 
+@if (Context.Session.GetString("IsAdmin") == "True")
+{
 <div class="container mt-4">
     <h2>Thêm câu hỏi mới</h2>
-    <form asp-action="Create" method="post" enctype="multipart/form-data">
-        <div class="form-group">
-            <label for="QuestionText">Nội dung câu hỏi:</label>
-            <input type="text" class="form-control" id="QuestionText" name="QuestionText" required />
-        </div>
-        <div class="form-group">
-            <label for="QuestionImage">Ảnh câu hỏi:</label>
-            <input type="file" class="form-control-file" id="QuestionImage" name="QuestionImage" />
-        </div>
-        <div class="form-group">
-            <label for="PkCategoryId">ID danh mục:</label>
-            <select class="form-control" id="PkCategoryId" name="PkCategoryId" required>
-                <option value="">Chọn danh mục</option>
-                @foreach (var category in ViewBag.Categories)
-                {
-                    <option value="@category.CategoryId">@category.CategoryName</option>
-                }
-            </select>
-        </div>
-        <button type="submit" class="btn btn-success">Thêm câu hỏi</button>
-        <a href="/Admin" class="btn btn-secondary">Quay lại</a>
-    </form>
-</div>
 
+        <form asp-action="Create" method="post" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="QuestionText">Nội dung câu hỏi:</label>
+                <input type="text" class="form-control" id="QuestionText" name="QuestionText" required />
+            </div>
+            <div class="form-group">
+                <label for="QuestionImage">Ảnh câu hỏi:</label>
+                <input type="file" class="form-control-file" id="QuestionImage" name="QuestionImage" />
+            </div>
+            <div class="form-group">
+                <label for="PkCategoryId">ID danh mục:</label>
+                <select class="form-control" id="PkCategoryId" name="PkCategoryId" required>
+                    <option value="">Chọn danh mục</option>
+                    @foreach (var category in ViewBag.Categories)
+                    {
+                        <option value="@category.CategoryId">@category.CategoryName</option>
+                    }
+                </select>
+            </div>
+            <button type="submit" class="btn btn-success">Thêm câu hỏi</button>
+            <a href="/Admin" class="btn btn-secondary">Quay lại</a>
+        </form>
+
+</div>
+}
+else
+{
+    <p class="text-danger">Bạn cần đăng nhập với tài khoản admin để thêm câu hỏi.</p>
+}
 <!-- Thêm link đến Bootstrap CSS nếu chưa có -->
 <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>

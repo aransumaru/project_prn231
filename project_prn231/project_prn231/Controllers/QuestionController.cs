@@ -18,9 +18,15 @@ namespace project_prn231.Controllers
         }
         public async Task<IActionResult> Question(int categoryId)
         {
+            int? userId = HttpContext.Session.GetInt32("UserId");
+
+            if (!userId.HasValue)
+            {
+                return RedirectToAction("Login", "Login");
+            }
             using (HttpClient client = _httpClient)
             {
-                using (HttpResponseMessage res = await client.GetAsync($"{urlQuestion}?categoryId={categoryId}"))
+                using (HttpResponseMessage res = await client.GetAsync($"{urlQuestion}/GetByCategory?categoryId={categoryId}"))
                 {
                     if (res.IsSuccessStatusCode)
                     {

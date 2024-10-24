@@ -1,3 +1,5 @@
+using project_prn231.Controllers;
+
 namespace project_prn231
 {
     public class Program
@@ -8,6 +10,7 @@ namespace project_prn231
             builder.Services.AddHttpClient();
             // Add services to the container.
             builder.Services.AddControllersWithViews();
+            builder.Services.AddHttpClient<AdminController>();
             builder.Services.AddSession(options =>
             {
                 options.IdleTimeout = TimeSpan.FromMinutes(30);

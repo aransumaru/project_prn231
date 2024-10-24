@@ -16,9 +16,10 @@ namespace project_prn231.Controllers
         public async Task<IActionResult> History()
         {
             int? userId = HttpContext.Session.GetInt32("UserId");
-            if (userId == null)
+
+            if (!userId.HasValue)
             {
-                return BadRequest("Thông tin người dùng không hợp lệ.");
+                return RedirectToAction("Login", "Login");
             }
 
             using (HttpResponseMessage res = await _httpClient.GetAsync($"{urlExam}/{userId}"))

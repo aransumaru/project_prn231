@@ -43,8 +43,29 @@
   },
   {
     "ContainingType": "project_prn231_api.Controllers.AnswerController",
+    "Method": "Update",
+    "RelativePath": "api/Answer/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "answer",
+        "Type": "project_prn231_api.Models.Answer",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "project_prn231_api.Controllers.AnswerController",
     "Method": "Delete",
-    "RelativePath": "api/Answer/Delete/{id}",
+    "RelativePath": "api/Answer/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -59,21 +80,16 @@
   },
   {
     "ContainingType": "project_prn231_api.Controllers.AnswerController",
-    "Method": "Update",
-    "RelativePath": "api/Answer/Update/{id}",
-    "HttpMethod": "PUT",
+    "Method": "GetByQuestionId",
+    "RelativePath": "api/Answer/GetByQuestionId",
+    "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "id",
+        "Name": "questionId",
         "Type": "System.Int32",
-        "IsRequired": true
-      },
-      {
-        "Name": "answer",
-        "Type": "project_prn231_api.Models.Answer",
-        "IsRequired": true
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []
@@ -254,22 +270,6 @@
   },
   {
     "ContainingType": "project_prn231_api.Controllers.QuestionController",
-    "Method": "GetAll",
-    "RelativePath": "api/Question",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "categoryId",
-        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
-        "IsRequired": false
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "project_prn231_api.Controllers.QuestionController",
     "Method": "Insert",
     "RelativePath": "api/Question",
     "HttpMethod": "POST",
@@ -333,6 +333,38 @@
         "Name": "id",
         "Type": "System.Int32",
         "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "project_prn231_api.Controllers.QuestionController",
+    "Method": "GetByCategory",
+    "RelativePath": "api/Question/GetByCategory",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "categoryId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "project_prn231_api.Controllers.QuestionController",
+    "Method": "GetByUser",
+    "RelativePath": "api/Question/GetByUser",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []

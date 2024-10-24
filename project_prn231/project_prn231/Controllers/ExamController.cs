@@ -18,6 +18,11 @@ namespace project_prn231.Controllers
         public async Task<IActionResult> Submit(int categoryId, List<int> selectedAnswers)
         {
             int? userId = HttpContext.Session.GetInt32("UserId");
+
+            if (!userId.HasValue)
+            {
+                return RedirectToAction("Login", "Login");
+            }
             if (userId == null)
             {
                 return BadRequest("Thông tin người dùng không hợp lệ.");

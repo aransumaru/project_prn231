@@ -43,10 +43,17 @@ namespace project_prn231_api.Models
 
                 entity.Property(e => e.PkQuestionId).HasColumnName("PK_QuestionId");
 
+                entity.Property(e => e.PkUserId).HasColumnName("Pk_UserId");
+
                 entity.HasOne(d => d.PkQuestion)
                     .WithMany(p => p.Answers)
                     .HasForeignKey(d => d.PkQuestionId)
-                    .HasConstraintName("FK__Answers__PK_Ques__656C112C");
+                    .HasConstraintName("FK__Answers__PK_Ques__66603565");
+
+                entity.HasOne(d => d.PkUser)
+                    .WithMany(p => p.Answers)
+                    .HasForeignKey(d => d.PkUserId)
+                    .HasConstraintName("FK__Answers__Pk_User__68487DD7");
             });
 
             modelBuilder.Entity<Category>(entity =>
@@ -67,17 +74,19 @@ namespace project_prn231_api.Models
                 entity.HasOne(d => d.PkCategory)
                     .WithMany(p => p.Exams)
                     .HasForeignKey(d => d.PkCategoryId)
-                    .HasConstraintName("FK__Exams__PK_Catego__6A30C649");
+                    .HasConstraintName("FK__Exams__PK_Catego__6C190EBB");
 
                 entity.HasOne(d => d.PkUser)
                     .WithMany(p => p.Exams)
                     .HasForeignKey(d => d.PkUserId)
-                    .HasConstraintName("FK__Exams__PK_UserId__693CA210");
+                    .HasConstraintName("FK__Exams__PK_UserId__6B24EA82");
             });
 
             modelBuilder.Entity<Question>(entity =>
             {
                 entity.Property(e => e.PkCategoryId).HasColumnName("PK_CategoryId");
+
+                entity.Property(e => e.PkUserId).HasColumnName("Pk_UserId");
 
                 entity.Property(e => e.QuestionImage).HasMaxLength(255);
 
@@ -87,6 +96,11 @@ namespace project_prn231_api.Models
                     .WithMany(p => p.Questions)
                     .HasForeignKey(d => d.PkCategoryId)
                     .HasConstraintName("FK__Questions__PK_Ca__628FA481");
+
+                entity.HasOne(d => d.PkUser)
+                    .WithMany(p => p.Questions)
+                    .HasForeignKey(d => d.PkUserId)
+                    .HasConstraintName("FK__Questions__Pk_Us__6383C8BA");
             });
 
             modelBuilder.Entity<User>(entity =>

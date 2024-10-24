@@ -12,28 +12,51 @@ namespace project_prn231_api.Controllers
         project_prn231Context context = new project_prn231Context();
 
         // GET: api/question
-        [HttpGet]
-        public IActionResult GetAll(int? categoryId = null)
-        {
-            var questionsQuery = context.Questions.AsQueryable();
-            if (categoryId.HasValue)
-            {
-                questionsQuery = questionsQuery.Where(q => q.PkCategoryId == categoryId.Value);
-            }
+        //public IActionResult GetAll()
+        //{
 
-            var questions = questionsQuery
+
+        //    var questions = context.Questions
+        //        .Select(q => new
+        //        {
+        //            q.QuestionId,
+        //            q.PkCategoryId,
+        //            q.QuestionText,
+        //            q.QuestionImage,
+        //            q.Pk_UserId,
+        //            Answers = q.Answers.Select(a => new
+        //            {
+        //                a.AnswerId,
+        //                a.AnswerText,
+        //                a.AnswerImage,
+        //                a.IsCorrect,
+        //                a.Pk_UserId
+        //            }).ToList()
+        //        })
+        //        .ToList();
+
+        //    return Ok(questions);
+        //}
+
+        [HttpGet("GetByCategory")]
+        public IActionResult GetByCategory(int categoryId)
+        {
+            var questions = context.Questions
+                .Where(q => q.PkCategoryId == categoryId)
                 .Select(x => new
                 {
                     x.QuestionId,
                     x.PkCategoryId,
                     x.QuestionText,
                     x.QuestionImage,
+                    x.PkUserId,
                     Answers = x.Answers.Select(a => new
                     {
                         a.AnswerId,
                         a.AnswerText,
                         a.AnswerImage,
-                        a.IsCorrect
+                        a.IsCorrect,
+                        a.PkUserId
                     }).ToList()
                 })
                 .ToList();
@@ -41,6 +64,31 @@ namespace project_prn231_api.Controllers
             return Ok(questions);
         }
 
+        [HttpGet("GetByUser")]
+        public IActionResult GetByUser(int userId)
+        {
+            var questions = context.Questions
+                .Where(q => q.PkUserId == userId)
+                .Select(x => new
+                {
+                    x.QuestionId,
+                    x.PkCategoryId,
+                    x.QuestionText,
+                    x.QuestionImage,
+                    x.PkUserId,
+                    Answers = x.Answers.Select(a => new
+                    {
+                        a.AnswerId,
+                        a.AnswerText,
+                        a.AnswerImage,
+                        a.IsCorrect,
+                        a.PkUserId
+                    }).ToList()
+                })
+                .ToList();
+
+            return Ok(questions);
+        }
 
         // GET: api/question/{id}
         [HttpGet("{id}")]
@@ -48,12 +96,21 @@ namespace project_prn231_api.Controllers
         {
             var question = context.Questions
                 .Where(x => x.QuestionId == id)
-                .Select(x => new
+                .Select(x => new Question
                 {
-                    x.QuestionId,
-                    x.PkCategoryId,
-                    x.QuestionText,
-                    x.QuestionImage
+                    QuestionId = x.QuestionId,
+                    QuestionText = x.QuestionText,
+                    PkCategoryId = x.PkCategoryId,
+                    QuestionImage = x.QuestionImage,
+                    PkUserId = x.PkUserId,
+                    Answers = x.Answers.Select(a => new Answer
+                    {
+                        AnswerId = a.AnswerId,
+                        AnswerText = a.AnswerText,
+                        AnswerImage = a.AnswerImage,
+                        IsCorrect = a.IsCorrect,
+                        PkQuestionId = x.QuestionId,
+                    }).ToList()
                 })
                 .FirstOrDefault();
 
@@ -64,6 +121,7 @@ namespace project_prn231_api.Controllers
 
             return Ok(question);
         }
+
 
         // POST: api/question
         [HttpPost]
@@ -83,6 +141,10 @@ namespace project_prn231_api.Controllers
             if (question.PkCategoryId <= 0)
             {
                 return BadRequest("ID danh mục không hợp lệ.");
+            }
+            if (question.PkUserId == null)
+            {
+                return BadRequest("User id không hợp lệ.");
             }
 
             context.Questions.Add(question);
@@ -125,6 +187,7 @@ namespace project_prn231_api.Controllers
             existingQuestion.PkCategoryId = question.PkCategoryId;
             existingQuestion.QuestionText = question.QuestionText;
             existingQuestion.QuestionImage = question.QuestionImage;
+            existingQuestion.PkUserId = question.PkUserId;
 
             context.SaveChanges();
             return Ok(existingQuestion);

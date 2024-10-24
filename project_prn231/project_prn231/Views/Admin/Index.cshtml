@@ -3,10 +3,12 @@
 @{
     ViewBag.Title = "Danh sách câu hỏi";
 }
-
+@if (Context.Session.GetString("IsAdmin") == "True")
+{
 <div class="container mt-4">
     <h2>Danh sách câu hỏi</h2>
     <a href="/Admin/Create" class="btn btn-success">Thêm câu hỏi mới</a>
+    <a href="/" class="btn btn-secondary">Trở về trang chủ</a>
     <table class="table table-striped">
         <thead class="thead-dark">
             <tr>
@@ -26,7 +28,7 @@
                         <img src="@question.QuestionImage" alt="Hình ảnh câu hỏi" style="width: 100px; height: auto;" />
                     </td>
                     <td>
-                        <a href="/Answer/@question.QuestionId" class="btn btn-info">Thông tin</a>
+                        <a href="/Admin/Detail/@question.QuestionId" class="btn btn-info">Thông tin</a>
                         <a href="/Admin/Update/@question.QuestionId" class="btn btn-warning">Sửa</a>
                         <a href="/Admin/Delete/@question.QuestionId" class="btn btn-danger" onclick="return confirm('Bạn có chắc chắn muốn xóa không?');">Xóa</a>
                     </td>
@@ -37,7 +39,12 @@
 
 
 </div>
-
+}
+else
+{
+    var isAdmin = Context.Session.GetString("IsAdmin");
+    <p class="text-danger">Bạn cần đăng nhập với tài khoản admin để thêm câu hỏi. @isAdmin</p>
+}
 <!-- Thêm link đến Bootstrap JS và CSS nếu chưa có -->
 <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>

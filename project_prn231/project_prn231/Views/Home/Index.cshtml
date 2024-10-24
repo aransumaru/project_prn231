@@ -31,10 +31,21 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="/Home">Trang chủ</a>
+                        <a class="nav-link active" aria-current="page" href="/">Trang chủ</a>
                     </li>
                     @if (Context.Session.GetString("UserId") != null)
                     {
+                        var userId = Context.Session.GetString("UserId");
+                        var isAdmin = Context.Session.GetString("IsAdmin");
+                        @if (isAdmin != null && bool.TryParse(isAdmin, out bool isAdminBool) && isAdminBool)
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Admin">Quản lý</a>
+                            </li>
+                        }
+                        <li class="nav-item">
+                            <a class="nav-link" href="/History">Lịch sử</a>
+                        </li>
                         <li class="nav-item">
                             <a class="nav-link" href="/Logout">Đăng xuất</a>
                         </li>

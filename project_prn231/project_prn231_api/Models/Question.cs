@@ -14,8 +14,10 @@ namespace project_prn231_api.Models
         public int? PkCategoryId { get; set; }
         public string QuestionText { get; set; } = null!;
         public string? QuestionImage { get; set; }
+        public int? PkUserId { get; set; }
 
         public virtual Category? PkCategory { get; set; }
+        public virtual User? PkUser { get; set; }
         public virtual ICollection<Answer> Answers { get; set; }
     }
 }

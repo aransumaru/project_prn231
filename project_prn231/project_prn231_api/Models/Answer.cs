@@ -10,7 +10,9 @@ namespace project_prn231_api.Models
         public string AnswerText { get; set; } = null!;
         public string? AnswerImage { get; set; }
         public bool? IsCorrect { get; set; }
+        public int? PkUserId { get; set; }
 
         public virtual Question? PkQuestion { get; set; }
+        public virtual User? PkUser { get; set; }
     }
 }

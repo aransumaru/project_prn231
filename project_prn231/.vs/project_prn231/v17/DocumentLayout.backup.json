@@ -3,32 +3,48 @@
   "WorkspaceRootPath": "C:\\Users\\Admin\\Downloads\\hoc\\SEKy8\\PRN231\\Project\\project_prn231\\project_prn231\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7E5F4B26-21ED-4619-AF10-77752D7DB525}|project_prn231\\project_prn231.csproj|c:\\users\\admin\\downloads\\hoc\\seky8\\prn231\\project\\project_prn231\\project_prn231\\project_prn231\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7E5F4B26-21ED-4619-AF10-77752D7DB525}|project_prn231\\project_prn231.csproj|solutionrelative:project_prn231\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{7E5F4B26-21ED-4619-AF10-77752D7DB525}|project_prn231\\project_prn231.csproj|c:\\users\\admin\\downloads\\hoc\\seky8\\prn231\\project\\project_prn231\\project_prn231\\project_prn231\\views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{7E5F4B26-21ED-4619-AF10-77752D7DB525}|project_prn231\\project_prn231.csproj|solutionrelative:project_prn231\\views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5F6E7615-0D45-4CB7-9D28-1E3A0A63888F}|project_prn231_api\\project_prn231_api.csproj|c:\\users\\admin\\downloads\\hoc\\seky8\\prn231\\project\\project_prn231\\project_prn231\\project_prn231_api\\controllers\\questioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5F6E7615-0D45-4CB7-9D28-1E3A0A63888F}|project_prn231_api\\project_prn231_api.csproj|solutionrelative:project_prn231_api\\controllers\\questioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7E5F4B26-21ED-4619-AF10-77752D7DB525}|project_prn231\\project_prn231.csproj|c:\\users\\admin\\downloads\\hoc\\seky8\\prn231\\project\\project_prn231\\project_prn231\\project_prn231\\views\\admin\\detail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7E5F4B26-21ED-4619-AF10-77752D7DB525}|project_prn231\\project_prn231.csproj|solutionrelative:project_prn231\\views\\admin\\detail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E5F4B26-21ED-4619-AF10-77752D7DB525}|project_prn231\\project_prn231.csproj|c:\\users\\admin\\downloads\\hoc\\seky8\\prn231\\project\\project_prn231\\project_prn231\\project_prn231\\views\\answer\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7E5F4B26-21ED-4619-AF10-77752D7DB525}|project_prn231\\project_prn231.csproj|solutionrelative:project_prn231\\views\\answer\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E5F4B26-21ED-4619-AF10-77752D7DB525}|project_prn231\\project_prn231.csproj|c:\\users\\admin\\downloads\\hoc\\seky8\\prn231\\project\\project_prn231\\project_prn231\\project_prn231\\views\\answer\\detail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7E5F4B26-21ED-4619-AF10-77752D7DB525}|project_prn231\\project_prn231.csproj|solutionrelative:project_prn231\\views\\answer\\detail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E5F4B26-21ED-4619-AF10-77752D7DB525}|project_prn231\\project_prn231.csproj|c:\\users\\admin\\downloads\\hoc\\seky8\\prn231\\project\\project_prn231\\project_prn231\\project_prn231\\views\\answer\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7E5F4B26-21ED-4619-AF10-77752D7DB525}|project_prn231\\project_prn231.csproj|solutionrelative:project_prn231\\views\\answer\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7E5F4B26-21ED-4619-AF10-77752D7DB525}|project_prn231\\project_prn231.csproj|c:\\users\\admin\\downloads\\hoc\\seky8\\prn231\\project\\project_prn231\\project_prn231\\project_prn231\\views\\admin\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{7E5F4B26-21ED-4619-AF10-77752D7DB525}|project_prn231\\project_prn231.csproj|solutionrelative:project_prn231\\views\\admin\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7E5F4B26-21ED-4619-AF10-77752D7DB525}|project_prn231\\project_prn231.csproj|c:\\users\\admin\\downloads\\hoc\\seky8\\prn231\\project\\project_prn231\\project_prn231\\project_prn231\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7E5F4B26-21ED-4619-AF10-77752D7DB525}|project_prn231\\project_prn231.csproj|solutionrelative:project_prn231\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7E5F4B26-21ED-4619-AF10-77752D7DB525}|project_prn231\\project_prn231.csproj|c:\\users\\admin\\downloads\\hoc\\seky8\\prn231\\project\\project_prn231\\project_prn231\\project_prn231\\views\\admin\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7E5F4B26-21ED-4619-AF10-77752D7DB525}|project_prn231\\project_prn231.csproj|solutionrelative:project_prn231\\views\\admin\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E5F4B26-21ED-4619-AF10-77752D7DB525}|project_prn231\\project_prn231.csproj|c:\\users\\admin\\downloads\\hoc\\seky8\\prn231\\project\\project_prn231\\project_prn231\\project_prn231\\models\\answer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E5F4B26-21ED-4619-AF10-77752D7DB525}|project_prn231\\project_prn231.csproj|solutionrelative:project_prn231\\models\\answer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E5F4B26-21ED-4619-AF10-77752D7DB525}|project_prn231\\project_prn231.csproj|c:\\users\\admin\\downloads\\hoc\\seky8\\prn231\\project\\project_prn231\\project_prn231\\project_prn231\\controllers\\questioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E5F4B26-21ED-4619-AF10-77752D7DB525}|project_prn231\\project_prn231.csproj|solutionrelative:project_prn231\\controllers\\questioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7E5F4B26-21ED-4619-AF10-77752D7DB525}|project_prn231\\project_prn231.csproj|c:\\users\\admin\\downloads\\hoc\\seky8\\prn231\\project\\project_prn231\\project_prn231\\project_prn231\\controllers\\logoutcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7E5F4B26-21ED-4619-AF10-77752D7DB525}|project_prn231\\project_prn231.csproj|solutionrelative:project_prn231\\controllers\\logoutcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7E5F4B26-21ED-4619-AF10-77752D7DB525}|project_prn231\\project_prn231.csproj|c:\\users\\admin\\downloads\\hoc\\seky8\\prn231\\project\\project_prn231\\project_prn231\\project_prn231\\controllers\\questioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7E5F4B26-21ED-4619-AF10-77752D7DB525}|project_prn231\\project_prn231.csproj|solutionrelative:project_prn231\\controllers\\questioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7E5F4B26-21ED-4619-AF10-77752D7DB525}|project_prn231\\project_prn231.csproj|c:\\users\\admin\\downloads\\hoc\\seky8\\prn231\\project\\project_prn231\\project_prn231\\project_prn231\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E5F4B26-21ED-4619-AF10-77752D7DB525}|project_prn231\\project_prn231.csproj|solutionrelative:project_prn231\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7E5F4B26-21ED-4619-AF10-77752D7DB525}|project_prn231\\project_prn231.csproj|c:\\users\\admin\\downloads\\hoc\\seky8\\prn231\\project\\project_prn231\\project_prn231\\project_prn231\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -47,12 +63,8 @@
       "RelativeMoniker": "D:0:0:{7E5F4B26-21ED-4619-AF10-77752D7DB525}|project_prn231\\project_prn231.csproj|solutionrelative:project_prn231\\controllers\\answercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7E5F4B26-21ED-4619-AF10-77752D7DB525}|project_prn231\\project_prn231.csproj|c:\\users\\admin\\downloads\\hoc\\seky8\\prn231\\project\\project_prn231\\project_prn231\\project_prn231\\views\\admin\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{7E5F4B26-21ED-4619-AF10-77752D7DB525}|project_prn231\\project_prn231.csproj|solutionrelative:project_prn231\\views\\admin\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5F6E7615-0D45-4CB7-9D28-1E3A0A63888F}|project_prn231_api\\project_prn231_api.csproj|c:\\users\\admin\\downloads\\hoc\\seky8\\prn231\\project\\project_prn231\\project_prn231\\project_prn231_api\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5F6E7615-0D45-4CB7-9D28-1E3A0A63888F}|project_prn231_api\\project_prn231_api.csproj|solutionrelative:project_prn231_api\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7E5F4B26-21ED-4619-AF10-77752D7DB525}|project_prn231\\project_prn231.csproj|c:\\users\\admin\\downloads\\hoc\\seky8\\prn231\\project\\project_prn231\\project_prn231\\project_prn231\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E5F4B26-21ED-4619-AF10-77752D7DB525}|project_prn231\\project_prn231.csproj|solutionrelative:project_prn231\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7E5F4B26-21ED-4619-AF10-77752D7DB525}|project_prn231\\project_prn231.csproj|c:\\users\\admin\\downloads\\hoc\\seky8\\prn231\\project\\project_prn231\\project_prn231\\project_prn231\\views\\question\\question.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -63,32 +75,36 @@
       "RelativeMoniker": "D:0:0:{5F6E7615-0D45-4CB7-9D28-1E3A0A63888F}|project_prn231_api\\project_prn231_api.csproj|solutionrelative:project_prn231_api\\controllers\\answercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7E5F4B26-21ED-4619-AF10-77752D7DB525}|project_prn231\\project_prn231.csproj|c:\\users\\admin\\downloads\\hoc\\seky8\\prn231\\project\\project_prn231\\project_prn231\\project_prn231\\views\\answer\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{7E5F4B26-21ED-4619-AF10-77752D7DB525}|project_prn231\\project_prn231.csproj|solutionrelative:project_prn231\\views\\answer\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{7E5F4B26-21ED-4619-AF10-77752D7DB525}|project_prn231\\project_prn231.csproj|c:\\users\\admin\\downloads\\hoc\\seky8\\prn231\\project\\project_prn231\\project_prn231\\project_prn231\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7E5F4B26-21ED-4619-AF10-77752D7DB525}|project_prn231\\project_prn231.csproj|solutionrelative:project_prn231\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7E5F4B26-21ED-4619-AF10-77752D7DB525}|project_prn231\\project_prn231.csproj|c:\\users\\admin\\downloads\\hoc\\seky8\\prn231\\project\\project_prn231\\project_prn231\\project_prn231\\views\\history\\history.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{7E5F4B26-21ED-4619-AF10-77752D7DB525}|project_prn231\\project_prn231.csproj|solutionrelative:project_prn231\\views\\history\\history.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{5F6E7615-0D45-4CB7-9D28-1E3A0A63888F}|project_prn231_api\\project_prn231_api.csproj|c:\\users\\admin\\downloads\\hoc\\seky8\\prn231\\project\\project_prn231\\project_prn231\\project_prn231_api\\controllers\\questioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F6E7615-0D45-4CB7-9D28-1E3A0A63888F}|project_prn231_api\\project_prn231_api.csproj|solutionrelative:project_prn231_api\\controllers\\questioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F6E7615-0D45-4CB7-9D28-1E3A0A63888F}|project_prn231_api\\project_prn231_api.csproj|c:\\users\\admin\\downloads\\hoc\\seky8\\prn231\\project\\project_prn231\\project_prn231\\project_prn231_api\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F6E7615-0D45-4CB7-9D28-1E3A0A63888F}|project_prn231_api\\project_prn231_api.csproj|solutionrelative:project_prn231_api\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E5F4B26-21ED-4619-AF10-77752D7DB525}|project_prn231\\project_prn231.csproj|c:\\users\\admin\\downloads\\hoc\\seky8\\prn231\\project\\project_prn231\\project_prn231\\project_prn231\\models\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E5F4B26-21ED-4619-AF10-77752D7DB525}|project_prn231\\project_prn231.csproj|solutionrelative:project_prn231\\models\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F6E7615-0D45-4CB7-9D28-1E3A0A63888F}|project_prn231_api\\project_prn231_api.csproj|c:\\users\\admin\\downloads\\hoc\\seky8\\prn231\\project\\project_prn231\\project_prn231\\project_prn231_api\\models\\question.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F6E7615-0D45-4CB7-9D28-1E3A0A63888F}|project_prn231_api\\project_prn231_api.csproj|solutionrelative:project_prn231_api\\models\\question.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7E5F4B26-21ED-4619-AF10-77752D7DB525}|project_prn231\\project_prn231.csproj|c:\\users\\admin\\downloads\\hoc\\seky8\\prn231\\project\\project_prn231\\project_prn231\\project_prn231\\models\\question.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7E5F4B26-21ED-4619-AF10-77752D7DB525}|project_prn231\\project_prn231.csproj|solutionrelative:project_prn231\\models\\question.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7E5F4B26-21ED-4619-AF10-77752D7DB525}|project_prn231\\project_prn231.csproj|c:\\users\\admin\\downloads\\hoc\\seky8\\prn231\\project\\project_prn231\\project_prn231\\project_prn231\\models\\exam.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7E5F4B26-21ED-4619-AF10-77752D7DB525}|project_prn231\\project_prn231.csproj|solutionrelative:project_prn231\\models\\exam.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5F6E7615-0D45-4CB7-9D28-1E3A0A63888F}|project_prn231_api\\project_prn231_api.csproj|c:\\users\\admin\\downloads\\hoc\\seky8\\prn231\\project\\project_prn231\\project_prn231\\project_prn231_api\\models\\answer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F6E7615-0D45-4CB7-9D28-1E3A0A63888F}|project_prn231_api\\project_prn231_api.csproj|solutionrelative:project_prn231_api\\models\\answer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7E5F4B26-21ED-4619-AF10-77752D7DB525}|project_prn231\\project_prn231.csproj|c:\\users\\admin\\downloads\\hoc\\seky8\\prn231\\project\\project_prn231\\project_prn231\\project_prn231\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{7E5F4B26-21ED-4619-AF10-77752D7DB525}|project_prn231\\project_prn231.csproj|solutionrelative:project_prn231\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5F6E7615-0D45-4CB7-9D28-1E3A0A63888F}|project_prn231_api\\project_prn231_api.csproj|c:\\users\\admin\\downloads\\hoc\\seky8\\prn231\\project\\project_prn231\\project_prn231\\project_prn231_api\\controllers\\examcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5F6E7615-0D45-4CB7-9D28-1E3A0A63888F}|project_prn231_api\\project_prn231_api.csproj|solutionrelative:project_prn231_api\\controllers\\examcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5F6E7615-0D45-4CB7-9D28-1E3A0A63888F}|project_prn231_api\\project_prn231_api.csproj|c:\\users\\admin\\downloads\\hoc\\seky8\\prn231\\project\\project_prn231\\project_prn231\\project_prn231_api\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5F6E7615-0D45-4CB7-9D28-1E3A0A63888F}|project_prn231_api\\project_prn231_api.csproj|solutionrelative:project_prn231_api\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5F6E7615-0D45-4CB7-9D28-1E3A0A63888F}|project_prn231_api\\project_prn231_api.csproj|c:\\users\\admin\\downloads\\hoc\\seky8\\prn231\\project\\project_prn231\\project_prn231\\project_prn231_api\\models\\project_prn231context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F6E7615-0D45-4CB7-9D28-1E3A0A63888F}|project_prn231_api\\project_prn231_api.csproj|solutionrelative:project_prn231_api\\models\\project_prn231context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -98,290 +114,728 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 73,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{fbcae063-e2c0-4ab1-a516-996ea3dafb72}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{004be353-6879-467c-9d1e-9ac23cdf6d49}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:133:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:134:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{c9c0ae26-aa77-11d2-b3f0-0000f87570ee}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0504ff91-9d61-11d0-a794-00a0c9110051}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e506b91c-c606-466a-90a9-123d1d1e12b3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:134:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:135:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:136:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:137:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:138:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:2:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{873151d0-cf2e-48cc-b4bf-ad0394f6a3c3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1377497384:0:{83107a3e-496a-485e-b455-16ddb978e55e}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:15:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:16:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:17:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:14:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:13:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:12:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:11:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:10:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:9:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:8:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:7:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:6:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:5:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:4:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:3:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1928210406:0:{bf84ea66-d821-4dba-b1b1-2777d8574775}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:350743133:0:{bf84ea66-d821-4dba-b1b1-2777d8574775}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:6:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:12:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:13:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{004be353-6879-467c-9d1e-9ac23cdf6d49}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{588470cc-84f8-4a57-9ac4-86bca0625ff4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:6:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:7:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:16:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:17:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:11:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:12:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:20:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:27:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:23:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:29:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:26:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "HistoryController.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\hoc\\SEKy8\\PRN231\\Project\\project_prn231\\project_prn231\\project_prn231\\Controllers\\HistoryController.cs",
-              "RelativeDocumentMoniker": "project_prn231\\Controllers\\HistoryController.cs",
-              "ToolTip": "C:\\Users\\Admin\\Downloads\\hoc\\SEKy8\\PRN231\\Project\\project_prn231\\project_prn231\\project_prn231\\Controllers\\HistoryController.cs",
-              "RelativeToolTip": "project_prn231\\Controllers\\HistoryController.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAQwBcAAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-20T10:13:12.476Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AdminController.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\hoc\\SEKy8\\PRN231\\Project\\project_prn231\\project_prn231\\project_prn231\\Controllers\\AdminController.cs",
-              "RelativeDocumentMoniker": "project_prn231\\Controllers\\AdminController.cs",
-              "ToolTip": "C:\\Users\\Admin\\Downloads\\hoc\\SEKy8\\PRN231\\Project\\project_prn231\\project_prn231\\project_prn231\\Controllers\\AdminController.cs",
-              "RelativeToolTip": "project_prn231\\Controllers\\AdminController.cs",
-              "ViewState": "AgIAADwAAAAAAAAAAAAzwIkAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-20T10:13:10.247Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "LoginController.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\hoc\\SEKy8\\PRN231\\Project\\project_prn231\\project_prn231\\project_prn231\\Controllers\\LoginController.cs",
-              "RelativeDocumentMoniker": "project_prn231\\Controllers\\LoginController.cs",
-              "ToolTip": "C:\\Users\\Admin\\Downloads\\hoc\\SEKy8\\PRN231\\Project\\project_prn231\\project_prn231\\project_prn231\\Controllers\\LoginController.cs",
-              "RelativeToolTip": "project_prn231\\Controllers\\LoginController.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABYAAAA5AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-20T10:28:44.626Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Update.cshtml",
-              "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\hoc\\SEKy8\\PRN231\\Project\\project_prn231\\project_prn231\\project_prn231\\Views\\Admin\\Update.cshtml",
-              "RelativeDocumentMoniker": "project_prn231\\Views\\Admin\\Update.cshtml",
-              "ToolTip": "C:\\Users\\Admin\\Downloads\\hoc\\SEKy8\\PRN231\\Project\\project_prn231\\project_prn231\\project_prn231\\Views\\Admin\\Update.cshtml",
-              "RelativeToolTip": "project_prn231\\Views\\Admin\\Update.cshtml",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAACoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-20T11:04:16.449Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\hoc\\SEKy8\\PRN231\\Project\\project_prn231\\project_prn231\\project_prn231\\Views\\Admin\\Index.cshtml",
-              "RelativeDocumentMoniker": "project_prn231\\Views\\Admin\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Admin\\Downloads\\hoc\\SEKy8\\PRN231\\Project\\project_prn231\\project_prn231\\project_prn231\\Views\\Admin\\Index.cshtml",
-              "RelativeToolTip": "project_prn231\\Views\\Admin\\Index.cshtml",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAACAAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-20T10:19:33.562Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "QuestionController.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\hoc\\SEKy8\\PRN231\\Project\\project_prn231\\project_prn231\\project_prn231_api\\Controllers\\QuestionController.cs",
-              "RelativeDocumentMoniker": "project_prn231_api\\Controllers\\QuestionController.cs",
-              "ToolTip": "C:\\Users\\Admin\\Downloads\\hoc\\SEKy8\\PRN231\\Project\\project_prn231\\project_prn231\\project_prn231_api\\Controllers\\QuestionController.cs",
-              "RelativeToolTip": "project_prn231_api\\Controllers\\QuestionController.cs",
-              "ViewState": "AgIAACIAAAAAAAAAAAAAAJMAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-20T10:43:24.752Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "LogoutController.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\hoc\\SEKy8\\PRN231\\Project\\project_prn231\\project_prn231\\project_prn231\\Controllers\\LogoutController.cs",
-              "RelativeDocumentMoniker": "project_prn231\\Controllers\\LogoutController.cs",
-              "ToolTip": "C:\\Users\\Admin\\Downloads\\hoc\\SEKy8\\PRN231\\Project\\project_prn231\\project_prn231\\project_prn231\\Controllers\\LogoutController.cs",
-              "RelativeToolTip": "project_prn231\\Controllers\\LogoutController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-20T11:27:05.343Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
               "Title": "QuestionController.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\hoc\\SEKy8\\PRN231\\Project\\project_prn231\\project_prn231\\project_prn231\\Controllers\\QuestionController.cs",
               "RelativeDocumentMoniker": "project_prn231\\Controllers\\QuestionController.cs",
               "ToolTip": "C:\\Users\\Admin\\Downloads\\hoc\\SEKy8\\PRN231\\Project\\project_prn231\\project_prn231\\project_prn231\\Controllers\\QuestionController.cs",
               "RelativeToolTip": "project_prn231\\Controllers\\QuestionController.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAxwBYAAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAYwBkAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-20T10:43:16Z",
+              "WhenOpened": "2024-10-23T17:07:38.068Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\hoc\\SEKy8\\PRN231\\Project\\project_prn231\\project_prn231\\project_prn231\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "project_prn231\\Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Users\\Admin\\Downloads\\hoc\\SEKy8\\PRN231\\Project\\project_prn231\\project_prn231\\project_prn231\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "project_prn231\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAYwCYAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-20T10:28:45.848Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "ExamController.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\hoc\\SEKy8\\PRN231\\Project\\project_prn231\\project_prn231\\project_prn231\\Controllers\\ExamController.cs",
-              "RelativeDocumentMoniker": "project_prn231\\Controllers\\ExamController.cs",
-              "ToolTip": "C:\\Users\\Admin\\Downloads\\hoc\\SEKy8\\PRN231\\Project\\project_prn231\\project_prn231\\project_prn231\\Controllers\\ExamController.cs",
-              "RelativeToolTip": "project_prn231\\Controllers\\ExamController.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAYwBkAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-20T11:26:27.587Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "CategoryController.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\hoc\\SEKy8\\PRN231\\Project\\project_prn231\\project_prn231\\project_prn231_api\\Controllers\\CategoryController.cs",
-              "RelativeDocumentMoniker": "project_prn231_api\\Controllers\\CategoryController.cs",
-              "ToolTip": "C:\\Users\\Admin\\Downloads\\hoc\\SEKy8\\PRN231\\Project\\project_prn231\\project_prn231\\project_prn231_api\\Controllers\\CategoryController.cs",
-              "RelativeToolTip": "project_prn231_api\\Controllers\\CategoryController.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABcAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-20T10:42:23.267Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Question.cshtml",
-              "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\hoc\\SEKy8\\PRN231\\Project\\project_prn231\\project_prn231\\project_prn231\\Views\\Question\\Question.cshtml",
-              "RelativeDocumentMoniker": "project_prn231\\Views\\Question\\Question.cshtml",
-              "ToolTip": "C:\\Users\\Admin\\Downloads\\hoc\\SEKy8\\PRN231\\Project\\project_prn231\\project_prn231\\project_prn231\\Views\\Question\\Question.cshtml",
-              "RelativeToolTip": "project_prn231\\Views\\Question\\Question.cshtml",
-              "ViewState": "AgIAABgAAAAAAAAAAAAAACwAAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-20T10:44:02.333Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "AnswerController.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\hoc\\SEKy8\\PRN231\\Project\\project_prn231\\project_prn231\\project_prn231\\Controllers\\AnswerController.cs",
-              "RelativeDocumentMoniker": "project_prn231\\Controllers\\AnswerController.cs",
-              "ToolTip": "C:\\Users\\Admin\\Downloads\\hoc\\SEKy8\\PRN231\\Project\\project_prn231\\project_prn231\\project_prn231\\Controllers\\AnswerController.cs",
-              "RelativeToolTip": "project_prn231\\Controllers\\AnswerController.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAAwAUAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-20T11:04:57.268Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 6,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\hoc\\SEKy8\\PRN231\\Project\\project_prn231\\project_prn231\\project_prn231\\Views\\Admin\\Create.cshtml",
               "RelativeDocumentMoniker": "project_prn231\\Views\\Admin\\Create.cshtml",
               "ToolTip": "C:\\Users\\Admin\\Downloads\\hoc\\SEKy8\\PRN231\\Project\\project_prn231\\project_prn231\\project_prn231\\Views\\Admin\\Create.cshtml",
               "RelativeToolTip": "project_prn231\\Views\\Admin\\Create.cshtml",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAABoAAAAOAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-20T11:04:04.281Z",
+              "WhenOpened": "2024-10-23T16:58:38.017Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Detail.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\hoc\\SEKy8\\PRN231\\Project\\project_prn231\\project_prn231\\project_prn231\\Views\\Admin\\Detail.cshtml",
+              "RelativeDocumentMoniker": "project_prn231\\Views\\Admin\\Detail.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\Downloads\\hoc\\SEKy8\\PRN231\\Project\\project_prn231\\project_prn231\\project_prn231\\Views\\Admin\\Detail.cshtml",
+              "RelativeToolTip": "project_prn231\\Views\\Admin\\Detail.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-24T07:49:59.621Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\hoc\\SEKy8\\PRN231\\Project\\project_prn231\\project_prn231\\project_prn231\\Views\\Admin\\Index.cshtml",
+              "RelativeDocumentMoniker": "project_prn231\\Views\\Admin\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\Downloads\\hoc\\SEKy8\\PRN231\\Project\\project_prn231\\project_prn231\\project_prn231\\Views\\Admin\\Index.cshtml",
+              "RelativeToolTip": "project_prn231\\Views\\Admin\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-24T07:48:44.893Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Update.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\hoc\\SEKy8\\PRN231\\Project\\project_prn231\\project_prn231\\project_prn231\\Views\\Admin\\Update.cshtml",
+              "RelativeDocumentMoniker": "project_prn231\\Views\\Admin\\Update.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\Downloads\\hoc\\SEKy8\\PRN231\\Project\\project_prn231\\project_prn231\\project_prn231\\Views\\Admin\\Update.cshtml",
+              "RelativeToolTip": "project_prn231\\Views\\Admin\\Update.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-24T08:56:19.211Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\hoc\\SEKy8\\PRN231\\Project\\project_prn231\\project_prn231\\project_prn231\\Views\\Answer\\Create.cshtml",
+              "RelativeDocumentMoniker": "project_prn231\\Views\\Answer\\Create.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\Downloads\\hoc\\SEKy8\\PRN231\\Project\\project_prn231\\project_prn231\\project_prn231\\Views\\Answer\\Create.cshtml",
+              "RelativeToolTip": "project_prn231\\Views\\Answer\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-24T08:25:33.59Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Detail.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\hoc\\SEKy8\\PRN231\\Project\\project_prn231\\project_prn231\\project_prn231\\Views\\Answer\\Detail.cshtml",
+              "RelativeDocumentMoniker": "project_prn231\\Views\\Answer\\Detail.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\Downloads\\hoc\\SEKy8\\PRN231\\Project\\project_prn231\\project_prn231\\project_prn231\\Views\\Answer\\Detail.cshtml",
+              "RelativeToolTip": "project_prn231\\Views\\Answer\\Detail.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-24T08:52:10.283Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Update.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\hoc\\SEKy8\\PRN231\\Project\\project_prn231\\project_prn231\\project_prn231\\Views\\Answer\\Update.cshtml",
+              "RelativeDocumentMoniker": "project_prn231\\Views\\Answer\\Update.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\Downloads\\hoc\\SEKy8\\PRN231\\Project\\project_prn231\\project_prn231\\project_prn231\\Views\\Answer\\Update.cshtml",
+              "RelativeToolTip": "project_prn231\\Views\\Answer\\Update.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-24T08:57:52.753Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Answer.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\hoc\\SEKy8\\PRN231\\Project\\project_prn231\\project_prn231\\project_prn231\\Models\\Answer.cs",
+              "RelativeDocumentMoniker": "project_prn231\\Models\\Answer.cs",
+              "ToolTip": "C:\\Users\\Admin\\Downloads\\hoc\\SEKy8\\PRN231\\Project\\project_prn231\\project_prn231\\project_prn231\\Models\\Answer.cs",
+              "RelativeToolTip": "project_prn231\\Models\\Answer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-23T17:37:39.266Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "LoginController.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\hoc\\SEKy8\\PRN231\\Project\\project_prn231\\project_prn231\\project_prn231\\Controllers\\LoginController.cs",
+              "RelativeDocumentMoniker": "project_prn231\\Controllers\\LoginController.cs",
+              "ToolTip": "C:\\Users\\Admin\\Downloads\\hoc\\SEKy8\\PRN231\\Project\\project_prn231\\project_prn231\\project_prn231\\Controllers\\LoginController.cs",
+              "RelativeToolTip": "project_prn231\\Controllers\\LoginController.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAxwBUAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-24T10:26:37.12Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "LogoutController.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\hoc\\SEKy8\\PRN231\\Project\\project_prn231\\project_prn231\\project_prn231\\Controllers\\LogoutController.cs",
+              "RelativeDocumentMoniker": "project_prn231\\Controllers\\LogoutController.cs",
+              "ToolTip": "C:\\Users\\Admin\\Downloads\\hoc\\SEKy8\\PRN231\\Project\\project_prn231\\project_prn231\\project_prn231\\Controllers\\LogoutController.cs",
+              "RelativeToolTip": "project_prn231\\Controllers\\LogoutController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-24T10:39:37.402Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ExamController.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\hoc\\SEKy8\\PRN231\\Project\\project_prn231\\project_prn231\\project_prn231\\Controllers\\ExamController.cs",
+              "RelativeDocumentMoniker": "project_prn231\\Controllers\\ExamController.cs",
+              "ToolTip": "C:\\Users\\Admin\\Downloads\\hoc\\SEKy8\\PRN231\\Project\\project_prn231\\project_prn231\\project_prn231\\Controllers\\ExamController.cs",
+              "RelativeToolTip": "project_prn231\\Controllers\\ExamController.cs",
+              "ViewState": "AgIAADYAAAAAAAAAAAAYwBgAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-24T08:25:57.576Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 14,
               "Title": "AnswerController.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\hoc\\SEKy8\\PRN231\\Project\\project_prn231\\project_prn231\\project_prn231_api\\Controllers\\AnswerController.cs",
-              "RelativeDocumentMoniker": "project_prn231_api\\Controllers\\AnswerController.cs",
-              "ToolTip": "C:\\Users\\Admin\\Downloads\\hoc\\SEKy8\\PRN231\\Project\\project_prn231\\project_prn231\\project_prn231_api\\Controllers\\AnswerController.cs",
-              "RelativeToolTip": "project_prn231_api\\Controllers\\AnswerController.cs",
-              "ViewState": "AgIAADMAAAAAAAAAAAAYwGIAAAAZAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\hoc\\SEKy8\\PRN231\\Project\\project_prn231\\project_prn231\\project_prn231\\Controllers\\AnswerController.cs",
+              "RelativeDocumentMoniker": "project_prn231\\Controllers\\AnswerController.cs",
+              "ToolTip": "C:\\Users\\Admin\\Downloads\\hoc\\SEKy8\\PRN231\\Project\\project_prn231\\project_prn231\\project_prn231\\Controllers\\AnswerController.cs",
+              "RelativeToolTip": "project_prn231\\Controllers\\AnswerController.cs",
+              "ViewState": "AgIAAIgAAAAAAAAAAAAwwIwAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-20T11:06:13.68Z",
+              "WhenOpened": "2024-10-23T17:39:00.359Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\hoc\\SEKy8\\PRN231\\Project\\project_prn231\\project_prn231\\project_prn231\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "project_prn231\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\Admin\\Downloads\\hoc\\SEKy8\\PRN231\\Project\\project_prn231\\project_prn231\\project_prn231\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "project_prn231\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAYwBUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-24T08:03:38.923Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "HistoryController.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\hoc\\SEKy8\\PRN231\\Project\\project_prn231\\project_prn231\\project_prn231\\Controllers\\HistoryController.cs",
+              "RelativeDocumentMoniker": "project_prn231\\Controllers\\HistoryController.cs",
+              "ToolTip": "C:\\Users\\Admin\\Downloads\\hoc\\SEKy8\\PRN231\\Project\\project_prn231\\project_prn231\\project_prn231\\Controllers\\HistoryController.cs",
+              "RelativeToolTip": "project_prn231\\Controllers\\HistoryController.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAQwBYAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-24T10:39:20.542Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 15,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\hoc\\SEKy8\\PRN231\\Project\\project_prn231\\project_prn231\\project_prn231\\Views\\Answer\\Index.cshtml",
-              "RelativeDocumentMoniker": "project_prn231\\Views\\Answer\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Admin\\Downloads\\hoc\\SEKy8\\PRN231\\Project\\project_prn231\\project_prn231\\project_prn231\\Views\\Answer\\Index.cshtml",
-              "RelativeToolTip": "project_prn231\\Views\\Answer\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-20T11:05:12.677Z",
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\hoc\\SEKy8\\PRN231\\Project\\project_prn231\\project_prn231\\project_prn231\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "project_prn231\\Controllers\\AdminController.cs",
+              "ToolTip": "C:\\Users\\Admin\\Downloads\\hoc\\SEKy8\\PRN231\\Project\\project_prn231\\project_prn231\\project_prn231\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "project_prn231\\Controllers\\AdminController.cs",
+              "ViewState": "AgIAAMcAAAAAAAAAAADwv8sAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-23T17:07:20.605Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "AnswerController.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\hoc\\SEKy8\\PRN231\\Project\\project_prn231\\project_prn231\\project_prn231_api\\Controllers\\AnswerController.cs",
+              "RelativeDocumentMoniker": "project_prn231_api\\Controllers\\AnswerController.cs",
+              "ToolTip": "C:\\Users\\Admin\\Downloads\\hoc\\SEKy8\\PRN231\\Project\\project_prn231\\project_prn231\\project_prn231_api\\Controllers\\AnswerController.cs",
+              "RelativeToolTip": "project_prn231_api\\Controllers\\AnswerController.cs",
+              "ViewState": "AgIAADMAAAAAAAAAAAAgwEMAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-23T17:34:59.072Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 16,
-              "Title": "History.cshtml",
-              "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\hoc\\SEKy8\\PRN231\\Project\\project_prn231\\project_prn231\\project_prn231\\Views\\History\\History.cshtml",
-              "RelativeDocumentMoniker": "project_prn231\\Views\\History\\History.cshtml",
-              "ToolTip": "C:\\Users\\Admin\\Downloads\\hoc\\SEKy8\\PRN231\\Project\\project_prn231\\project_prn231\\project_prn231\\Views\\History\\History.cshtml",
-              "RelativeToolTip": "project_prn231\\Views\\History\\History.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAlAAAAAAAAAA==",
+              "Title": "Question.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\hoc\\SEKy8\\PRN231\\Project\\project_prn231\\project_prn231\\project_prn231\\Views\\Question\\Question.cshtml",
+              "RelativeDocumentMoniker": "project_prn231\\Views\\Question\\Question.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\Downloads\\hoc\\SEKy8\\PRN231\\Project\\project_prn231\\project_prn231\\project_prn231\\Views\\Question\\Question.cshtml",
+              "RelativeToolTip": "project_prn231\\Views\\Question\\Question.cshtml",
+              "ViewState": "AgIAABEAAAAAAAAAAAAAAB8AAABGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-20T10:19:25.439Z",
+              "WhenOpened": "2024-10-24T10:05:18.084Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 18,
-              "Title": "Exam.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\hoc\\SEKy8\\PRN231\\Project\\project_prn231\\project_prn231\\project_prn231\\Models\\Exam.cs",
-              "RelativeDocumentMoniker": "project_prn231\\Models\\Exam.cs",
-              "ToolTip": "C:\\Users\\Admin\\Downloads\\hoc\\SEKy8\\PRN231\\Project\\project_prn231\\project_prn231\\project_prn231\\Models\\Exam.cs",
-              "RelativeToolTip": "project_prn231\\Models\\Exam.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-20T10:30:28.619Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "Question.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\hoc\\SEKy8\\PRN231\\Project\\project_prn231\\project_prn231\\project_prn231\\Models\\Question.cs",
-              "RelativeDocumentMoniker": "project_prn231\\Models\\Question.cs",
-              "ToolTip": "C:\\Users\\Admin\\Downloads\\hoc\\SEKy8\\PRN231\\Project\\project_prn231\\project_prn231\\project_prn231\\Models\\Question.cs",
-              "RelativeToolTip": "project_prn231\\Models\\Question.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAiwBIAAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-20T10:44:26.64Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\hoc\\SEKy8\\PRN231\\Project\\project_prn231\\project_prn231\\project_prn231\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "project_prn231\\Views\\Home\\Index.cshtml",
               "ToolTip": "C:\\Users\\Admin\\Downloads\\hoc\\SEKy8\\PRN231\\Project\\project_prn231\\project_prn231\\project_prn231\\Views\\Home\\Index.cshtml",
               "RelativeToolTip": "project_prn231\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAADMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABwAAAAAAAAAAIAwwC4AAABHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-20T10:42:47.898Z"
+              "WhenOpened": "2024-10-23T16:58:39.505Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "UserController.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\hoc\\SEKy8\\PRN231\\Project\\project_prn231\\project_prn231\\project_prn231_api\\Controllers\\UserController.cs",
-              "RelativeDocumentMoniker": "project_prn231_api\\Controllers\\UserController.cs",
-              "ToolTip": "C:\\Users\\Admin\\Downloads\\hoc\\SEKy8\\PRN231\\Project\\project_prn231\\project_prn231\\project_prn231_api\\Controllers\\UserController.cs",
-              "RelativeToolTip": "project_prn231_api\\Controllers\\UserController.cs",
-              "ViewState": "AgIAAIQAAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 19,
+              "Title": "QuestionController.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\hoc\\SEKy8\\PRN231\\Project\\project_prn231\\project_prn231\\project_prn231_api\\Controllers\\QuestionController.cs",
+              "RelativeDocumentMoniker": "project_prn231_api\\Controllers\\QuestionController.cs",
+              "ToolTip": "C:\\Users\\Admin\\Downloads\\hoc\\SEKy8\\PRN231\\Project\\project_prn231\\project_prn231\\project_prn231_api\\Controllers\\QuestionController.cs",
+              "RelativeToolTip": "project_prn231_api\\Controllers\\QuestionController.cs",
+              "ViewState": "AgIAAKcAAAAAAAAAAAAYwLoAAABCAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-20T10:30:23.296Z"
+              "WhenOpened": "2024-10-23T17:07:15.412Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 20,
-              "Title": "ExamController.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\hoc\\SEKy8\\PRN231\\Project\\project_prn231\\project_prn231\\project_prn231_api\\Controllers\\ExamController.cs",
-              "RelativeDocumentMoniker": "project_prn231_api\\Controllers\\ExamController.cs",
-              "ToolTip": "C:\\Users\\Admin\\Downloads\\hoc\\SEKy8\\PRN231\\Project\\project_prn231\\project_prn231\\project_prn231_api\\Controllers\\ExamController.cs",
-              "RelativeToolTip": "project_prn231_api\\Controllers\\ExamController.cs",
-              "ViewState": "AgIAAG4AAAAAAAAAAAAYwIMAAAAaAAAAAAAAAA==",
+              "Title": "CategoryController.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\hoc\\SEKy8\\PRN231\\Project\\project_prn231\\project_prn231\\project_prn231_api\\Controllers\\CategoryController.cs",
+              "RelativeDocumentMoniker": "project_prn231_api\\Controllers\\CategoryController.cs",
+              "ToolTip": "C:\\Users\\Admin\\Downloads\\hoc\\SEKy8\\PRN231\\Project\\project_prn231\\project_prn231\\project_prn231_api\\Controllers\\CategoryController.cs",
+              "RelativeToolTip": "project_prn231_api\\Controllers\\CategoryController.cs",
+              "ViewState": "AgIAADMAAAAAAAAAAAAYwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-20T10:20:43.085Z"
+              "WhenOpened": "2024-10-24T09:33:15.64Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "UserDto.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\hoc\\SEKy8\\PRN231\\Project\\project_prn231\\project_prn231\\project_prn231\\Models\\UserDto.cs",
+              "RelativeDocumentMoniker": "project_prn231\\Models\\UserDto.cs",
+              "ToolTip": "C:\\Users\\Admin\\Downloads\\hoc\\SEKy8\\PRN231\\Project\\project_prn231\\project_prn231\\project_prn231\\Models\\UserDto.cs",
+              "RelativeToolTip": "project_prn231\\Models\\UserDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-24T08:31:45.836Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Question.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\hoc\\SEKy8\\PRN231\\Project\\project_prn231\\project_prn231\\project_prn231\\Models\\Question.cs",
+              "RelativeDocumentMoniker": "project_prn231\\Models\\Question.cs",
+              "ToolTip": "C:\\Users\\Admin\\Downloads\\hoc\\SEKy8\\PRN231\\Project\\project_prn231\\project_prn231\\project_prn231\\Models\\Question.cs",
+              "RelativeToolTip": "project_prn231\\Models\\Question.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAUwA8AAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-23T17:18:10.457Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Question.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\hoc\\SEKy8\\PRN231\\Project\\project_prn231\\project_prn231\\project_prn231_api\\Models\\Question.cs",
+              "RelativeDocumentMoniker": "project_prn231_api\\Models\\Question.cs",
+              "ToolTip": "C:\\Users\\Admin\\Downloads\\hoc\\SEKy8\\PRN231\\Project\\project_prn231\\project_prn231\\project_prn231_api\\Models\\Question.cs",
+              "RelativeToolTip": "project_prn231_api\\Models\\Question.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAIwBQAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-23T17:18:18.404Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "project_prn231Context.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\hoc\\SEKy8\\PRN231\\Project\\project_prn231\\project_prn231\\project_prn231_api\\Models\\project_prn231Context.cs",
+              "RelativeDocumentMoniker": "project_prn231_api\\Models\\project_prn231Context.cs",
+              "ToolTip": "C:\\Users\\Admin\\Downloads\\hoc\\SEKy8\\PRN231\\Project\\project_prn231\\project_prn231\\project_prn231_api\\Models\\project_prn231Context.cs",
+              "RelativeToolTip": "project_prn231_api\\Models\\project_prn231Context.cs",
+              "ViewState": "AgIAAGIAAAAAAAAAAAAAAGsAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-23T17:33:27.635Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Answer.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\hoc\\SEKy8\\PRN231\\Project\\project_prn231\\project_prn231\\project_prn231_api\\Models\\Answer.cs",
+              "RelativeDocumentMoniker": "project_prn231_api\\Models\\Answer.cs",
+              "ToolTip": "C:\\Users\\Admin\\Downloads\\hoc\\SEKy8\\PRN231\\Project\\project_prn231\\project_prn231\\project_prn231_api\\Models\\Answer.cs",
+              "RelativeToolTip": "project_prn231_api\\Models\\Answer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-23T17:37:00.88Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 1524,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:25:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:2:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:3:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:4:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:12:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:13:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:10:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:31:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:33:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:35:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:36:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:39:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:15:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:8:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:9:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:22:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:13:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 258,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{a80febb4-e7e0-4147-b476-21aaf2453969}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:2:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:3:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:4:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:5:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
             }
           ]
         }

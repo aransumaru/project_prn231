@@ -5,13 +5,14 @@ namespace project_prn231.Models
 {
     public partial class Answer
     {
-
         public int AnswerId { get; set; }
         public int? PkQuestionId { get; set; }
         public string AnswerText { get; set; } = null!;
         public string? AnswerImage { get; set; }
         public bool? IsCorrect { get; set; }
+        public int? PkUserId { get; set; }
 
         public virtual Question? PkQuestion { get; set; }
+        public virtual User? PkUser { get; set; }
     }
 }

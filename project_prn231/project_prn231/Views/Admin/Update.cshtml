@@ -3,7 +3,8 @@
 @{
     ViewBag.Title = "Cập nhật câu hỏi";
 }
-
+@if (Context.Session.GetString("IsAdmin") == "True")
+{
 <div class="container mt-4">
     <h2>Cập nhật câu hỏi</h2>
     <form asp-action="Update" method="post" enctype="multipart/form-data">
@@ -35,7 +36,11 @@
         <a href="/Admin" class="btn btn-secondary">Trở về</a>
     </form>
 </div>
-
+}
+else
+{
+    <p class="text-danger">Bạn cần đăng nhập với tài khoản admin để thêm câu hỏi.</p>
+}
 <!-- Thêm link đến Bootstrap JS và CSS nếu chưa có -->
 <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>

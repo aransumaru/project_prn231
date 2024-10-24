@@ -16,13 +16,14 @@ namespace project_prn231_api.Controllers
         public IActionResult GetAll()
         {
             var answers = context.Answers
-                .Select(x => new
+                .Select(a => new
                 {
-                    x.AnswerId,
-                    x.PkQuestionId,
-                    x.AnswerText,
-                    x.AnswerImage,
-                    x.IsCorrect
+                    a.AnswerId,
+                    a.PkQuestionId,
+                    a.AnswerText,
+                    a.AnswerImage,
+                    a.IsCorrect,
+                    a.PkUserId
                 })
                 .ToList();
 
@@ -34,14 +35,15 @@ namespace project_prn231_api.Controllers
         public IActionResult GetById(int id)
         {
             var answer = context.Answers
-                .Where(x => x.AnswerId == id)
-                .Select(x => new
+                .Where(a => a.AnswerId == id)
+                .Select(a => new
                 {
-                    x.AnswerId,
-                    x.PkQuestionId,
-                    x.AnswerText,
-                    x.AnswerImage,
-                    x.IsCorrect
+                    a.AnswerId,
+                    a.PkQuestionId,
+                    a.AnswerText,
+                    a.AnswerImage,
+                    a.IsCorrect,
+                    a.PkUserId
                 })
                 .FirstOrDefault();
 
@@ -69,7 +71,7 @@ namespace project_prn231_api.Controllers
         }
 
         // PUT: api/answer/{id}
-        [HttpPut("Update/{id}")]
+        [HttpPut("{id}")]
         public IActionResult Update(int id, [FromBody] Answer answer)
         {
             if (answer == null)
@@ -85,7 +87,6 @@ namespace project_prn231_api.Controllers
             }
 
             // Cập nhật thông tin câu trả lời
-            existingAnswer.PkQuestionId = answer.PkQuestionId;
             existingAnswer.AnswerText = answer.AnswerText;
             existingAnswer.AnswerImage = answer.AnswerImage;
             existingAnswer.IsCorrect = answer.IsCorrect;
@@ -96,7 +97,7 @@ namespace project_prn231_api.Controllers
         }
 
         // DELETE: api/answer/{id}
-        [HttpDelete("Delete/{id}")]
+        [HttpDelete("{id}")]
         public IActionResult Delete(int id)
         {
             var answer = context.Answers.Find(id);
@@ -111,5 +112,30 @@ namespace project_prn231_api.Controllers
 
             return Ok("ZXóa thành công");
         }
+        // GET: api/answer/GetByQuestionId?questionId={questionId}
+        [HttpGet("GetByQuestionId")]
+        public IActionResult GetByQuestionId(int questionId)
+        {
+            var answers = context.Answers
+                .Where(a => a.PkQuestionId == questionId)
+                .Select(a => new
+                {
+                    a.AnswerId,
+                    a.PkQuestionId,
+                    a.AnswerText,
+                    a.AnswerImage,
+                    a.IsCorrect,
+                    a.PkUserId
+                })
+                .ToList();
+
+            if (!answers.Any())
+            {
+                return NotFound($"Không có câu trả lời nào cho câu hỏi với ID {questionId}.");
+            }
+
+            return Ok(answers);
+        }
+
     }
 }
