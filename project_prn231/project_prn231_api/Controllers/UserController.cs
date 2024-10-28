@@ -55,19 +55,15 @@ namespace project_prn231_api.Controllers
         [HttpPost]
         public IActionResult Insert([FromBody] User user)
         {
-            if (user == null || string.IsNullOrEmpty(user.Username) || string.IsNullOrEmpty(user.Email) || string.IsNullOrEmpty(user.Password))
-            {
-                return BadRequest("Thông tin người dùng không hợp lệ.");
-            }
-            // Kiểm tra xem email đã tồn tại chưa
+
             if (context.Users.Any(u => u.Email == user.Email))
             {
-                return Conflict("Email đã được sử dụng.");
+                return BadRequest("Email đã được sử dụng.");
             }
             var existingUser = context.Users.FirstOrDefault(u => u.Username == user.Username);
             if (existingUser != null)
             {
-                return Conflict("Người dùng đã tồn tại.");
+                return BadRequest("Người dùng đã tồn tại.");
             }
             context.Users.Add(user);
             context.SaveChanges();
