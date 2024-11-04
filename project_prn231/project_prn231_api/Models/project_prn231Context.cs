@@ -21,6 +21,7 @@ namespace project_prn231_api.Models
         public virtual DbSet<Exam> Exams { get; set; } = null!;
         public virtual DbSet<Question> Questions { get; set; } = null!;
         public virtual DbSet<User> Users { get; set; } = null!;
+        public virtual DbSet<UserAnswer> UserAnswers { get; set; } = null!;
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -112,6 +113,19 @@ namespace project_prn231_api.Models
                 entity.Property(e => e.Password).HasMaxLength(50);
 
                 entity.Property(e => e.Username).HasMaxLength(50);
+            });
+
+            modelBuilder.Entity<UserAnswer>(entity =>
+            {
+                entity.Property(e => e.IsSelected).HasDefaultValueSql("((0))");
+
+                entity.Property(e => e.PkAnswerId).HasColumnName("PK_AnswerId");
+
+                entity.Property(e => e.PkExamId).HasColumnName("PK_ExamId");
+
+                entity.Property(e => e.PkQuestionId).HasColumnName("PK_QuestionId");
+
+
             });
 
             OnModelCreatingPartial(modelBuilder);

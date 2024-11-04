@@ -463,5 +463,110 @@
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "project_prn231_api.Controllers.UserAnswerController",
+    "Method": "GetAll",
+    "RelativePath": "api/UserAnswer",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "project_prn231_api.Controllers.UserAnswerController",
+    "Method": "PostUserAnswer",
+    "RelativePath": "api/UserAnswer",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userAnswer",
+        "Type": "project_prn231_api.Models.UserAnswer",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "project_prn231_api.Controllers.UserAnswerController",
+    "Method": "GetUserAnswer",
+    "RelativePath": "api/UserAnswer/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "project_prn231_api.Models.UserAnswer",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "project_prn231_api.Controllers.UserAnswerController",
+    "Method": "PutUserAnswer",
+    "RelativePath": "api/UserAnswer/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "userAnswer",
+        "Type": "project_prn231_api.Models.UserAnswer",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "project_prn231_api.Controllers.UserAnswerController",
+    "Method": "DeleteUserAnswer",
+    "RelativePath": "api/UserAnswer/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "project_prn231_api.Controllers.UserAnswerController",
+    "Method": "GetUserAnswersByExamId",
+    "RelativePath": "api/UserAnswer/Exam/{examId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "examId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
   }
 ]

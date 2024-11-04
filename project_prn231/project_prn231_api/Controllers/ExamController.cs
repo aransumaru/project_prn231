@@ -67,7 +67,7 @@ namespace project_prn231_api.Controllers
             context.Exams.Add(exam);
             context.SaveChanges();
 
-            return Ok("Thêm thành công");
+            return Ok(exam);
         }
 
         // PUT: api/exam/{id}

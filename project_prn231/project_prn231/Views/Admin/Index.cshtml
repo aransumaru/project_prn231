@@ -19,21 +19,31 @@
             </tr>
         </thead>
         <tbody>
-            @foreach (var question in Model)
-            {
-                <tr>
-                    <td>@question.QuestionId</td>
-                    <td>@question.QuestionText</td>
-                    <td>
-                        <img src="@question.QuestionImage" alt="Hình ảnh câu hỏi" style="width: 100px; height: auto;" />
-                    </td>
-                    <td>
-                        <a href="/Admin/Detail/@question.QuestionId" class="btn btn-info">Thông tin</a>
-                        <a href="/Admin/Update/@question.QuestionId" class="btn btn-warning">Sửa</a>
-                        <a href="/Admin/Delete/@question.QuestionId" class="btn btn-danger" onclick="return confirm('Bạn có chắc chắn muốn xóa không?');">Xóa</a>
-                    </td>
-                </tr>
-            }
+                @if (Model == null || !Model.Any())
+                {
+                    <tr>
+                        <td colspan="4" class="text-center">Chưa thêm câu hỏi nào</td>
+                    </tr>
+                }
+                else
+                {
+                    @foreach (var question in Model)
+                    {
+                        <tr>
+                            <td>@question.QuestionId</td>
+                            <td>@question.QuestionText</td>
+                            <td>
+                                <img src="@question.QuestionImage" alt="Hình ảnh câu hỏi" style="width: 100px; height: auto;" />
+                            </td>
+                            <td>
+                                <a href="/Admin/Detail/@question.QuestionId" class="btn btn-info">Thông tin</a>
+                                <a href="/Admin/Update/@question.QuestionId" class="btn btn-warning">Sửa</a>
+                                <a href="/Admin/Delete/@question.QuestionId" class="btn btn-danger" onclick="return confirm('Bạn có chắc chắn muốn xóa không?');">Xóa</a>
+                            </td>
+                        </tr>
+                    }
+                }
+
         </tbody>
     </table>
 

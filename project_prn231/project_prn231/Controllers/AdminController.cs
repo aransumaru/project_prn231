@@ -41,7 +41,7 @@ namespace project_prn231.Controllers
                     }
                     else
                     {
-                        return NotFound("Không tìm thấy danh sách câu hỏi.");
+                        return View(new List<Question>());
                     }
                 }
             }
