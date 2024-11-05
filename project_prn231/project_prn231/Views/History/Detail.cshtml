@@ -16,6 +16,7 @@
             <table class="table table-striped">
                 <thead>
                     <tr>
+                        <th>Câu hỏi</th>
                         <th>Câu trả lời</th>
                         <th>Trạng thái</th>
                     </tr>
@@ -24,6 +25,7 @@
                     @foreach (var item in Model)
                     {
                         <tr>
+                            <td>@item.QuestionText</td>
                             <td>@item.AnswerText</td>
                             <td>@(item.IsCorrect ? "Đúng" : "Sai")</td>
                         </tr>

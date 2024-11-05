@@ -38,6 +38,24 @@ namespace project_prn231.Controllers
             }
         }
 
+        [HttpGet("History/Detail")]
+        public async Task<IActionResult> Detail(int examId)
+        {
+            using (HttpResponseMessage res = await _httpClient.GetAsync($"https://localhost:7272/api/Exam/Detail/{examId}"))
+            {
+                if (res.IsSuccessStatusCode)
+                {
+                    string result = await res.Content.ReadAsStringAsync();
+                    List<AnswerDetailViewModel> answerDetails = JsonConvert.DeserializeObject<List<AnswerDetailViewModel>>(result);
+                    return View("Detail", answerDetails);
+                }
+                else
+                {
+                    return NotFound("Không tìm thấy chi tiết bài thi.");
+                }
+            }
+        }
+
 
     }
 }

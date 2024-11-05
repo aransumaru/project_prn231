@@ -254,6 +254,22 @@
   },
   {
     "ContainingType": "project_prn231_api.Controllers.ExamController",
+    "Method": "GetExamDetails",
+    "RelativePath": "api/Exam/Detail/{examId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "examId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "project_prn231_api.Controllers.ExamController",
     "Method": "GetByUserId",
     "RelativePath": "api/Exam/User/{userId}",
     "HttpMethod": "GET",

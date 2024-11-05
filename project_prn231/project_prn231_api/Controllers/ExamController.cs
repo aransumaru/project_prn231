@@ -138,6 +138,32 @@ namespace project_prn231_api.Controllers
 
             return Ok(exams);
         }
+        // API lấy chi tiết bài thi dựa trên ExamId
+        [HttpGet("Detail/{examId}")]
+        public IActionResult GetExamDetails(int examId)
+        {
+            // Tìm kiếm bài thi
+            var exam = context.Exams.Find(examId);
+            if (exam == null)
+            {
+                return NotFound("Không tìm thấy bài thi.");
+            }
 
+            // Lấy danh sách câu hỏi và câu trả lời của bài thi này
+            var examDetails = context.Questions
+                .Where(q => context.UserAnswers.Any(ua => ua.PkExamId == examId && ua.PkQuestionId == q.QuestionId))
+                .SelectMany(q => context.Answers
+                    .Where(a => a.PkQuestionId == q.QuestionId)
+                    .Select(a => new AnswerDetailViewModel
+                    {
+                        QuestionText = q.QuestionText,
+                        AnswerText = a.AnswerText,
+                        IsCorrect = (a.IsCorrect ?? false) && context.UserAnswers.Any(ua => ua.PkExamId == examId && ua.PkAnswerId == a.AnswerId && (ua.IsSelected ?? false))
+
+                    })
+                ).ToList();
+
+            return Ok(examDetails);
+        }
     }
 }

@@ -1,4 +1,4 @@
-﻿namespace project_prn231.Models
+﻿namespace project_prn231_api.Models
 {
     public class AnswerDetailViewModel
     {
