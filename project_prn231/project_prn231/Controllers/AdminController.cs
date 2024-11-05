@@ -220,5 +220,35 @@ namespace project_prn231.Controllers
             }
         }
 
+        [HttpPost("DeleteSelected")]
+        public async Task<IActionResult> DeleteSelected([FromBody] List<int> questionIds)
+        {
+            if (questionIds == null || !questionIds.Any())
+            {
+                return BadRequest("Không có câu hỏi nào được chọn.");
+            }
+
+            int? userId = HttpContext.Session.GetInt32("UserId");
+
+            if (!userId.HasValue)
+            {
+                return RedirectToAction("Login", "Login");
+            }
+
+            foreach (var id in questionIds)
+            {
+                using (HttpResponseMessage res = await _httpClient.DeleteAsync($"{urlQuestion}/{id}"))
+                {
+                    if (!res.IsSuccessStatusCode)
+                    {
+                        return BadRequest($"Xóa câu hỏi với ID {id} không thành công.");
+                    }
+                }
+            }
+
+            return Ok("Xóa các câu hỏi thành công.");
+        }
+
+
     }
 }

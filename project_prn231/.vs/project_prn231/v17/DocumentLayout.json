@@ -3,6 +3,22 @@
   "WorkspaceRootPath": "C:\\Users\\Admin\\Downloads\\hoc\\SEKy8\\PRN231\\Project\\project_prn231\\project_prn231\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{7E5F4B26-21ED-4619-AF10-77752D7DB525}|project_prn231\\project_prn231.csproj|c:\\users\\admin\\downloads\\hoc\\seky8\\prn231\\project\\project_prn231\\project_prn231\\project_prn231\\views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7E5F4B26-21ED-4619-AF10-77752D7DB525}|project_prn231\\project_prn231.csproj|solutionrelative:project_prn231\\views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E5F4B26-21ED-4619-AF10-77752D7DB525}|project_prn231\\project_prn231.csproj|c:\\users\\admin\\downloads\\hoc\\seky8\\prn231\\project\\project_prn231\\project_prn231\\project_prn231\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E5F4B26-21ED-4619-AF10-77752D7DB525}|project_prn231\\project_prn231.csproj|solutionrelative:project_prn231\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F6E7615-0D45-4CB7-9D28-1E3A0A63888F}|project_prn231_api\\project_prn231_api.csproj|c:\\users\\admin\\downloads\\hoc\\seky8\\prn231\\project\\project_prn231\\project_prn231\\project_prn231_api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{5F6E7615-0D45-4CB7-9D28-1E3A0A63888F}|project_prn231_api\\project_prn231_api.csproj|solutionrelative:project_prn231_api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E5F4B26-21ED-4619-AF10-77752D7DB525}|project_prn231\\project_prn231.csproj|c:\\users\\admin\\downloads\\hoc\\seky8\\prn231\\project\\project_prn231\\project_prn231\\project_prn231\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{7E5F4B26-21ED-4619-AF10-77752D7DB525}|project_prn231\\project_prn231.csproj|solutionrelative:project_prn231\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{7E5F4B26-21ED-4619-AF10-77752D7DB525}|project_prn231\\project_prn231.csproj|c:\\users\\admin\\downloads\\hoc\\seky8\\prn231\\project\\project_prn231\\project_prn231\\project_prn231\\controllers\\historycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7E5F4B26-21ED-4619-AF10-77752D7DB525}|project_prn231\\project_prn231.csproj|solutionrelative:project_prn231\\controllers\\historycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -37,10 +53,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{7E5F4B26-21ED-4619-AF10-77752D7DB525}|project_prn231\\project_prn231.csproj|c:\\users\\admin\\downloads\\hoc\\seky8\\prn231\\project\\project_prn231\\project_prn231\\project_prn231\\controllers\\answercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7E5F4B26-21ED-4619-AF10-77752D7DB525}|project_prn231\\project_prn231.csproj|solutionrelative:project_prn231\\controllers\\answercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7E5F4B26-21ED-4619-AF10-77752D7DB525}|project_prn231\\project_prn231.csproj|c:\\users\\admin\\downloads\\hoc\\seky8\\prn231\\project\\project_prn231\\project_prn231\\project_prn231\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7E5F4B26-21ED-4619-AF10-77752D7DB525}|project_prn231\\project_prn231.csproj|solutionrelative:project_prn231\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7E5F4B26-21ED-4619-AF10-77752D7DB525}|project_prn231\\project_prn231.csproj|c:\\users\\admin\\downloads\\hoc\\seky8\\prn231\\project\\project_prn231\\project_prn231\\project_prn231\\views\\history\\detail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -135,10 +147,6 @@
       "RelativeMoniker": "D:0:0:{7E5F4B26-21ED-4619-AF10-77752D7DB525}|project_prn231\\project_prn231.csproj|solutionrelative:project_prn231\\models\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7E5F4B26-21ED-4619-AF10-77752D7DB525}|project_prn231\\project_prn231.csproj|c:\\users\\admin\\downloads\\hoc\\seky8\\prn231\\project\\project_prn231\\project_prn231\\project_prn231\\views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{7E5F4B26-21ED-4619-AF10-77752D7DB525}|project_prn231\\project_prn231.csproj|solutionrelative:project_prn231\\views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{7E5F4B26-21ED-4619-AF10-77752D7DB525}|project_prn231\\project_prn231.csproj|c:\\users\\admin\\downloads\\hoc\\seky8\\prn231\\project\\project_prn231\\project_prn231\\project_prn231\\views\\register\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{7E5F4B26-21ED-4619-AF10-77752D7DB525}|project_prn231\\project_prn231.csproj|solutionrelative:project_prn231\\views\\register\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -153,14 +161,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{7E5F4B26-21ED-4619-AF10-77752D7DB525}|project_prn231\\project_prn231.csproj|c:\\users\\admin\\downloads\\hoc\\seky8\\prn231\\project\\project_prn231\\project_prn231\\project_prn231\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{7E5F4B26-21ED-4619-AF10-77752D7DB525}|project_prn231\\project_prn231.csproj|solutionrelative:project_prn231\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5F6E7615-0D45-4CB7-9D28-1E3A0A63888F}|project_prn231_api\\project_prn231_api.csproj|c:\\users\\admin\\downloads\\hoc\\seky8\\prn231\\project\\project_prn231\\project_prn231\\project_prn231_api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{5F6E7615-0D45-4CB7-9D28-1E3A0A63888F}|project_prn231_api\\project_prn231_api.csproj|solutionrelative:project_prn231_api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7E5F4B26-21ED-4619-AF10-77752D7DB525}|project_prn231\\project_prn231.csproj|c:\\users\\admin\\downloads\\hoc\\seky8\\prn231\\project\\project_prn231\\project_prn231\\project_prn231\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{7E5F4B26-21ED-4619-AF10-77752D7DB525}|project_prn231\\project_prn231.csproj|solutionrelative:project_prn231\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7E5F4B26-21ED-4619-AF10-77752D7DB525}|project_prn231\\project_prn231.csproj|c:\\users\\admin\\downloads\\hoc\\seky8\\prn231\\project\\project_prn231\\project_prn231\\project_prn231\\views\\answer\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -210,7 +210,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 76,
+          "SelectedChildIndex": 75,
           "Children": [
             {
               "$type": "Bookmark",
@@ -494,59 +494,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Answer.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\hoc\\SEKy8\\PRN231\\Project\\project_prn231\\project_prn231\\project_prn231\\Models\\Answer.cs",
-              "RelativeDocumentMoniker": "project_prn231\\Models\\Answer.cs",
-              "ToolTip": "C:\\Users\\Admin\\Downloads\\hoc\\SEKy8\\PRN231\\Project\\project_prn231\\project_prn231\\project_prn231\\Models\\Answer.cs",
-              "RelativeToolTip": "project_prn231\\Models\\Answer.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAkwBIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-23T17:37:39.266Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "AnswerController.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\hoc\\SEKy8\\PRN231\\Project\\project_prn231\\project_prn231\\project_prn231_api\\Controllers\\AnswerController.cs",
-              "RelativeDocumentMoniker": "project_prn231_api\\Controllers\\AnswerController.cs",
-              "ToolTip": "C:\\Users\\Admin\\Downloads\\hoc\\SEKy8\\PRN231\\Project\\project_prn231\\project_prn231\\project_prn231_api\\Controllers\\AnswerController.cs",
-              "RelativeToolTip": "project_prn231_api\\Controllers\\AnswerController.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAAwA4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-23T17:34:59.072Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "UserAnswerController.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\hoc\\SEKy8\\PRN231\\Project\\project_prn231\\project_prn231\\project_prn231_api\\Controllers\\UserAnswerController.cs",
-              "RelativeDocumentMoniker": "project_prn231_api\\Controllers\\UserAnswerController.cs",
-              "ToolTip": "C:\\Users\\Admin\\Downloads\\hoc\\SEKy8\\PRN231\\Project\\project_prn231\\project_prn231\\project_prn231_api\\Controllers\\UserAnswerController.cs",
-              "RelativeToolTip": "project_prn231_api\\Controllers\\UserAnswerController.cs",
-              "ViewState": "AgIAAGEAAAAAAAAAAAA/wHgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-04T15:15:19.57Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "UserAnswer.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\hoc\\SEKy8\\PRN231\\Project\\project_prn231\\project_prn231\\project_prn231\\Models\\UserAnswer.cs",
-              "RelativeDocumentMoniker": "project_prn231\\Models\\UserAnswer.cs",
-              "ToolTip": "C:\\Users\\Admin\\Downloads\\hoc\\SEKy8\\PRN231\\Project\\project_prn231\\project_prn231\\project_prn231\\Models\\UserAnswer.cs",
-              "RelativeToolTip": "project_prn231\\Models\\UserAnswer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-04T15:14:01.923Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "AnswerDetailViewModel.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\hoc\\SEKy8\\PRN231\\Project\\project_prn231\\project_prn231\\project_prn231\\Models\\AnswerDetailViewModel.cs",
               "RelativeDocumentMoniker": "project_prn231\\Models\\AnswerDetailViewModel.cs",
@@ -554,12 +502,11 @@
               "RelativeToolTip": "project_prn231\\Models\\AnswerDetailViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-04T18:26:43.798Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-04T18:26:43.798Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "ExamController.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\hoc\\SEKy8\\PRN231\\Project\\project_prn231\\project_prn231\\project_prn231_api\\Controllers\\ExamController.cs",
               "RelativeDocumentMoniker": "project_prn231_api\\Controllers\\ExamController.cs",
@@ -567,12 +514,11 @@
               "RelativeToolTip": "project_prn231_api\\Controllers\\ExamController.cs",
               "ViewState": "AgIAADQAAAAAAAAAAAAgwEUAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-04T14:29:16.617Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-04T14:29:16.617Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "HistoryController.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\hoc\\SEKy8\\PRN231\\Project\\project_prn231\\project_prn231\\project_prn231\\Controllers\\HistoryController.cs",
               "RelativeDocumentMoniker": "project_prn231\\Controllers\\HistoryController.cs",
@@ -580,12 +526,108 @@
               "RelativeToolTip": "project_prn231\\Controllers\\HistoryController.cs",
               "ViewState": "AgIAABMAAAAAAAAAAAAAACgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-24T10:39:20.542Z",
+              "WhenOpened": "2024-10-24T10:39:20.542Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\hoc\\SEKy8\\PRN231\\Project\\project_prn231\\project_prn231\\project_prn231\\appsettings.json",
+              "RelativeDocumentMoniker": "project_prn231\\appsettings.json",
+              "ToolTip": "C:\\Users\\Admin\\Downloads\\hoc\\SEKy8\\PRN231\\Project\\project_prn231\\project_prn231\\project_prn231\\appsettings.json",
+              "RelativeToolTip": "project_prn231\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-10-25T06:08:33.558Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\hoc\\SEKy8\\PRN231\\Project\\project_prn231\\project_prn231\\project_prn231_api\\appsettings.json",
+              "RelativeDocumentMoniker": "project_prn231_api\\appsettings.json",
+              "ToolTip": "C:\\Users\\Admin\\Downloads\\hoc\\SEKy8\\PRN231\\Project\\project_prn231\\project_prn231\\project_prn231_api\\appsettings.json",
+              "RelativeToolTip": "project_prn231_api\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-10-25T06:08:35.851Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\hoc\\SEKy8\\PRN231\\Project\\project_prn231\\project_prn231\\project_prn231\\Views\\Admin\\Index.cshtml",
+              "RelativeDocumentMoniker": "project_prn231\\Views\\Admin\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\Downloads\\hoc\\SEKy8\\PRN231\\Project\\project_prn231\\project_prn231\\project_prn231\\Views\\Admin\\Index.cshtml",
+              "RelativeToolTip": "project_prn231\\Views\\Admin\\Index.cshtml",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABsAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-24T07:48:44.893Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 1,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\hoc\\SEKy8\\PRN231\\Project\\project_prn231\\project_prn231\\project_prn231\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "project_prn231\\Controllers\\AdminController.cs",
+              "ToolTip": "C:\\Users\\Admin\\Downloads\\hoc\\SEKy8\\PRN231\\Project\\project_prn231\\project_prn231\\project_prn231\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "project_prn231\\Controllers\\AdminController.cs",
+              "ViewState": "AgIAALUAAAAAAAAAAAAowOwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-23T17:07:20.605Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "UserAnswer.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\hoc\\SEKy8\\PRN231\\Project\\project_prn231\\project_prn231\\project_prn231\\Models\\UserAnswer.cs",
+              "RelativeDocumentMoniker": "project_prn231\\Models\\UserAnswer.cs",
+              "ToolTip": "C:\\Users\\Admin\\Downloads\\hoc\\SEKy8\\PRN231\\Project\\project_prn231\\project_prn231\\project_prn231\\Models\\UserAnswer.cs",
+              "RelativeToolTip": "project_prn231\\Models\\UserAnswer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T15:14:01.923Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UserAnswerController.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\hoc\\SEKy8\\PRN231\\Project\\project_prn231\\project_prn231\\project_prn231_api\\Controllers\\UserAnswerController.cs",
+              "RelativeDocumentMoniker": "project_prn231_api\\Controllers\\UserAnswerController.cs",
+              "ToolTip": "C:\\Users\\Admin\\Downloads\\hoc\\SEKy8\\PRN231\\Project\\project_prn231\\project_prn231\\project_prn231_api\\Controllers\\UserAnswerController.cs",
+              "RelativeToolTip": "project_prn231_api\\Controllers\\UserAnswerController.cs",
+              "ViewState": "AgIAAGEAAAAAAAAAAAA/wHgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T15:15:19.57Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "AnswerController.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\hoc\\SEKy8\\PRN231\\Project\\project_prn231\\project_prn231\\project_prn231_api\\Controllers\\AnswerController.cs",
+              "RelativeDocumentMoniker": "project_prn231_api\\Controllers\\AnswerController.cs",
+              "ToolTip": "C:\\Users\\Admin\\Downloads\\hoc\\SEKy8\\PRN231\\Project\\project_prn231\\project_prn231\\project_prn231_api\\Controllers\\AnswerController.cs",
+              "RelativeToolTip": "project_prn231_api\\Controllers\\AnswerController.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-23T17:34:59.072Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Answer.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\hoc\\SEKy8\\PRN231\\Project\\project_prn231\\project_prn231\\project_prn231\\Models\\Answer.cs",
+              "RelativeDocumentMoniker": "project_prn231\\Models\\Answer.cs",
+              "ToolTip": "C:\\Users\\Admin\\Downloads\\hoc\\SEKy8\\PRN231\\Project\\project_prn231\\project_prn231\\project_prn231\\Models\\Answer.cs",
+              "RelativeToolTip": "project_prn231\\Models\\Answer.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAkwBIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-23T17:37:39.266Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "ExamController.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\hoc\\SEKy8\\PRN231\\Project\\project_prn231\\project_prn231\\project_prn231\\Controllers\\ExamController.cs",
               "RelativeDocumentMoniker": "project_prn231\\Controllers\\ExamController.cs",
@@ -593,12 +635,11 @@
               "RelativeToolTip": "project_prn231\\Controllers\\ExamController.cs",
               "ViewState": "AgIAAF0AAAAAAAAAAAAWwFQAAABSAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-24T08:25:57.576Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-24T08:25:57.576Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 12,
               "Title": "AnswerController.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\hoc\\SEKy8\\PRN231\\Project\\project_prn231\\project_prn231\\project_prn231\\Controllers\\AnswerController.cs",
               "RelativeDocumentMoniker": "project_prn231\\Controllers\\AnswerController.cs",
@@ -606,25 +647,11 @@
               "RelativeToolTip": "project_prn231\\Controllers\\AnswerController.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAAAAIwAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-23T17:39:00.359Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-23T17:39:00.359Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "AdminController.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\hoc\\SEKy8\\PRN231\\Project\\project_prn231\\project_prn231\\project_prn231\\Controllers\\AdminController.cs",
-              "RelativeDocumentMoniker": "project_prn231\\Controllers\\AdminController.cs",
-              "ToolTip": "C:\\Users\\Admin\\Downloads\\hoc\\SEKy8\\PRN231\\Project\\project_prn231\\project_prn231\\project_prn231\\Controllers\\AdminController.cs",
-              "RelativeToolTip": "project_prn231\\Controllers\\AdminController.cs",
-              "ViewState": "AgIAAEEAAAAAAAAAAAAAwDQAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-23T17:07:20.605Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 13,
               "Title": "Detail.cshtml",
               "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\hoc\\SEKy8\\PRN231\\Project\\project_prn231\\project_prn231\\project_prn231\\Views\\History\\Detail.cshtml",
               "RelativeDocumentMoniker": "project_prn231\\Views\\History\\Detail.cshtml",
@@ -632,12 +659,11 @@
               "RelativeToolTip": "project_prn231\\Views\\History\\Detail.cshtml",
               "ViewState": "AgIAABMAAAAAAAAAAAAwwCoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-04T17:58:22.953Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-04T17:58:22.953Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 14,
               "Title": "History.cshtml",
               "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\hoc\\SEKy8\\PRN231\\Project\\project_prn231\\project_prn231\\project_prn231\\Views\\History\\History.cshtml",
               "RelativeDocumentMoniker": "project_prn231\\Views\\History\\History.cshtml",
@@ -645,12 +671,11 @@
               "RelativeToolTip": "project_prn231\\Views\\History\\History.cshtml",
               "ViewState": "AgIAAB4AAAAAAAAAAAAmwDQAAABDAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-04T14:27:20.207Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-04T14:27:20.207Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 15,
               "Title": "Question.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\hoc\\SEKy8\\PRN231\\Project\\project_prn231\\project_prn231\\project_prn231\\Models\\Question.cs",
               "RelativeDocumentMoniker": "project_prn231\\Models\\Question.cs",
@@ -658,12 +683,11 @@
               "RelativeToolTip": "project_prn231\\Models\\Question.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-23T17:18:10.457Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-23T17:18:10.457Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 16,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\hoc\\SEKy8\\PRN231\\Project\\project_prn231\\project_prn231\\project_prn231\\Models\\User.cs",
               "RelativeDocumentMoniker": "project_prn231\\Models\\User.cs",
@@ -671,12 +695,11 @@
               "RelativeToolTip": "project_prn231\\Models\\User.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-28T13:59:31.049Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-28T13:59:31.049Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 17,
               "Title": "QuestionController.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\hoc\\SEKy8\\PRN231\\Project\\project_prn231\\project_prn231\\project_prn231_api\\Controllers\\QuestionController.cs",
               "RelativeDocumentMoniker": "project_prn231_api\\Controllers\\QuestionController.cs",
@@ -684,12 +707,11 @@
               "RelativeToolTip": "project_prn231_api\\Controllers\\QuestionController.cs",
               "ViewState": "AgIAANgAAAAAAAAAAAAwwNwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-23T17:07:15.412Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-23T17:07:15.412Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 18,
               "Title": "CategoryController.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\hoc\\SEKy8\\PRN231\\Project\\project_prn231\\project_prn231\\project_prn231_api\\Controllers\\CategoryController.cs",
               "RelativeDocumentMoniker": "project_prn231_api\\Controllers\\CategoryController.cs",
@@ -697,12 +719,11 @@
               "RelativeToolTip": "project_prn231_api\\Controllers\\CategoryController.cs",
               "ViewState": "AgIAADMAAAAAAAAAAAA1wAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-24T09:33:15.64Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-24T09:33:15.64Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 19,
               "Title": "UserController.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\hoc\\SEKy8\\PRN231\\Project\\project_prn231\\project_prn231\\project_prn231_api\\Controllers\\UserController.cs",
               "RelativeDocumentMoniker": "project_prn231_api\\Controllers\\UserController.cs",
@@ -710,12 +731,11 @@
               "RelativeToolTip": "project_prn231_api\\Controllers\\UserController.cs",
               "ViewState": "AgIAAAsAAAAAAAAAAAAAwBEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-28T06:39:23.993Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-28T06:39:23.993Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 20,
               "Title": "Question.cshtml",
               "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\hoc\\SEKy8\\PRN231\\Project\\project_prn231\\project_prn231\\project_prn231\\Views\\Question\\Question.cshtml",
               "RelativeDocumentMoniker": "project_prn231\\Views\\Question\\Question.cshtml",
@@ -723,12 +743,11 @@
               "RelativeToolTip": "project_prn231\\Views\\Question\\Question.cshtml",
               "ViewState": "AgIAACQAAAAAAAAAAAAmwDwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-24T10:05:18.084Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-24T10:05:18.084Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 21,
               "Title": "RegisterController.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\hoc\\SEKy8\\PRN231\\Project\\project_prn231\\project_prn231\\project_prn231\\Controllers\\RegisterController.cs",
               "RelativeDocumentMoniker": "project_prn231\\Controllers\\RegisterController.cs",
@@ -736,12 +755,11 @@
               "RelativeToolTip": "project_prn231\\Controllers\\RegisterController.cs",
               "ViewState": "AgIAABkAAAAAAAAAAAAwwCcAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-28T06:43:00.304Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-28T06:43:00.304Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 24,
               "Title": "UserAnswer.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\hoc\\SEKy8\\PRN231\\Project\\project_prn231\\project_prn231\\project_prn231_api\\Models\\UserAnswer.cs",
               "RelativeDocumentMoniker": "project_prn231_api\\Models\\UserAnswer.cs",
@@ -749,12 +767,11 @@
               "RelativeToolTip": "project_prn231_api\\Models\\UserAnswer.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAuwAoAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-04T15:13:10.349Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-04T15:13:10.349Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 22,
               "Title": "Exam.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\hoc\\SEKy8\\PRN231\\Project\\project_prn231\\project_prn231\\project_prn231\\Models\\Exam.cs",
               "RelativeDocumentMoniker": "project_prn231\\Models\\Exam.cs",
@@ -762,12 +779,11 @@
               "RelativeToolTip": "project_prn231\\Models\\Exam.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-04T16:26:55.72Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-04T16:26:55.72Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 23,
               "Title": "ErrorViewModel.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\hoc\\SEKy8\\PRN231\\Project\\project_prn231\\project_prn231\\project_prn231\\Models\\ErrorViewModel.cs",
               "RelativeDocumentMoniker": "project_prn231\\Models\\ErrorViewModel.cs",
@@ -775,12 +791,11 @@
               "RelativeToolTip": "project_prn231\\Models\\ErrorViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-04T16:54:41.548Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-04T16:54:41.548Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 26,
               "Title": "Question.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\hoc\\SEKy8\\PRN231\\Project\\project_prn231\\project_prn231\\project_prn231_api\\Models\\Question.cs",
               "RelativeDocumentMoniker": "project_prn231_api\\Models\\Question.cs",
@@ -788,12 +803,11 @@
               "RelativeToolTip": "project_prn231_api\\Models\\Question.cs",
               "ViewState": "AgIAAA0AAAAAAAAAAAASwBMAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-23T17:18:18.404Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-23T17:18:18.404Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 25,
               "Title": "project_prn231Context.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\hoc\\SEKy8\\PRN231\\Project\\project_prn231\\project_prn231\\project_prn231_api\\Models\\project_prn231Context.cs",
               "RelativeDocumentMoniker": "project_prn231_api\\Models\\project_prn231Context.cs",
@@ -801,12 +815,11 @@
               "RelativeToolTip": "project_prn231_api\\Models\\project_prn231Context.cs",
               "ViewState": "AgIAAG8AAAAAAAAAAAAAAH8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-23T17:33:27.635Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-23T17:33:27.635Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 27,
               "Title": "Answer.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\hoc\\SEKy8\\PRN231\\Project\\project_prn231\\project_prn231\\project_prn231_api\\Models\\Answer.cs",
               "RelativeDocumentMoniker": "project_prn231_api\\Models\\Answer.cs",
@@ -814,12 +827,11 @@
               "RelativeToolTip": "project_prn231_api\\Models\\Answer.cs",
               "ViewState": "AgIAAAcAAAAAAAAAAAA1wBAAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-23T17:37:00.88Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-23T17:37:00.88Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 28,
               "Title": "Exam.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\hoc\\SEKy8\\PRN231\\Project\\project_prn231\\project_prn231\\project_prn231_api\\Models\\Exam.cs",
               "RelativeDocumentMoniker": "project_prn231_api\\Models\\Exam.cs",
@@ -827,12 +839,11 @@
               "RelativeToolTip": "project_prn231_api\\Models\\Exam.cs",
               "ViewState": "AgIAAAgAAAAAAAAAAAAAwA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-04T16:36:31.391Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-04T16:36:31.391Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 29,
               "Title": "Category.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\hoc\\SEKy8\\PRN231\\Project\\project_prn231\\project_prn231\\project_prn231_api\\Models\\Category.cs",
               "RelativeDocumentMoniker": "project_prn231_api\\Models\\Category.cs",
@@ -840,12 +851,11 @@
               "RelativeToolTip": "project_prn231_api\\Models\\Category.cs",
               "ViewState": "AgIAAAcAAAAAAAAAAAAzwBEAAABEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-04T16:37:25.884Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-04T16:37:25.884Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 30,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\hoc\\SEKy8\\PRN231\\Project\\project_prn231\\project_prn231\\project_prn231\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "project_prn231\\Controllers\\HomeController.cs",
@@ -853,12 +863,11 @@
               "RelativeToolTip": "project_prn231\\Controllers\\HomeController.cs",
               "ViewState": "AgIAABgAAAAAAAAAAAAYwCAAAABuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-24T08:03:38.923Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-24T08:03:38.923Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 31,
               "Title": "Category.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\hoc\\SEKy8\\PRN231\\Project\\project_prn231\\project_prn231\\project_prn231\\Models\\Category.cs",
               "RelativeDocumentMoniker": "project_prn231\\Models\\Category.cs",
@@ -866,12 +875,11 @@
               "RelativeToolTip": "project_prn231\\Models\\Category.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-04T16:37:42.631Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-04T16:37:42.631Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 32,
               "Title": "Exam.cshtml",
               "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\hoc\\SEKy8\\PRN231\\Project\\project_prn231\\project_prn231\\project_prn231\\Views\\Exam\\Exam.cshtml",
               "RelativeDocumentMoniker": "project_prn231\\Views\\Exam\\Exam.cshtml",
@@ -879,12 +887,11 @@
               "RelativeToolTip": "project_prn231\\Views\\Exam\\Exam.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-04T14:55:18.431Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-04T14:55:18.431Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 33,
               "Title": "QuestionResult.cshtml",
               "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\hoc\\SEKy8\\PRN231\\Project\\project_prn231\\project_prn231\\project_prn231\\Views\\Question\\QuestionResult.cshtml",
               "RelativeDocumentMoniker": "project_prn231\\Views\\Question\\QuestionResult.cshtml",
@@ -892,12 +899,11 @@
               "RelativeToolTip": "project_prn231\\Views\\Question\\QuestionResult.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-04T14:53:19.816Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-04T14:53:19.816Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 34,
               "Title": "QuestionController.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\hoc\\SEKy8\\PRN231\\Project\\project_prn231\\project_prn231\\project_prn231\\Controllers\\QuestionController.cs",
               "RelativeDocumentMoniker": "project_prn231\\Controllers\\QuestionController.cs",
@@ -905,12 +911,11 @@
               "RelativeToolTip": "project_prn231\\Controllers\\QuestionController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAC8AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-23T17:07:38.068Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-23T17:07:38.068Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 35,
               "Title": "UserDto.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\hoc\\SEKy8\\PRN231\\Project\\project_prn231\\project_prn231\\project_prn231\\Models\\UserDto.cs",
               "RelativeDocumentMoniker": "project_prn231\\Models\\UserDto.cs",
@@ -918,25 +923,11 @@
               "RelativeToolTip": "project_prn231\\Models\\UserDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-24T08:31:45.836Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-24T08:31:45.836Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\hoc\\SEKy8\\PRN231\\Project\\project_prn231\\project_prn231\\project_prn231\\Views\\Admin\\Index.cshtml",
-              "RelativeDocumentMoniker": "project_prn231\\Views\\Admin\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Admin\\Downloads\\hoc\\SEKy8\\PRN231\\Project\\project_prn231\\project_prn231\\project_prn231\\Views\\Admin\\Index.cshtml",
-              "RelativeToolTip": "project_prn231\\Views\\Admin\\Index.cshtml",
-              "ViewState": "AgIAABQAAAAAAAAAAAAwwCEAAAA7AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-24T07:48:44.893Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 36,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\hoc\\SEKy8\\PRN231\\Project\\project_prn231\\project_prn231\\project_prn231\\Views\\Register\\Index.cshtml",
               "RelativeDocumentMoniker": "project_prn231\\Views\\Register\\Index.cshtml",
@@ -948,7 +939,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 37,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\hoc\\SEKy8\\PRN231\\Project\\project_prn231\\project_prn231\\project_prn231\\Views\\Admin\\Create.cshtml",
               "RelativeDocumentMoniker": "project_prn231\\Views\\Admin\\Create.cshtml",
@@ -960,7 +951,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 38,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\hoc\\SEKy8\\PRN231\\Project\\project_prn231\\project_prn231\\project_prn231\\Program.cs",
               "RelativeDocumentMoniker": "project_prn231\\Program.cs",
@@ -972,7 +963,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 39,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\hoc\\SEKy8\\PRN231\\Project\\project_prn231\\project_prn231\\project_prn231\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "project_prn231\\Properties\\launchSettings.json",
@@ -981,30 +972,6 @@
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2024-11-03T06:55:09.408Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 38,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\hoc\\SEKy8\\PRN231\\Project\\project_prn231\\project_prn231\\project_prn231_api\\appsettings.json",
-              "RelativeDocumentMoniker": "project_prn231_api\\appsettings.json",
-              "ToolTip": "C:\\Users\\Admin\\Downloads\\hoc\\SEKy8\\PRN231\\Project\\project_prn231\\project_prn231\\project_prn231_api\\appsettings.json",
-              "RelativeToolTip": "project_prn231_api\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAB1AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-10-25T06:08:35.851Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 39,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\hoc\\SEKy8\\PRN231\\Project\\project_prn231\\project_prn231\\project_prn231\\appsettings.json",
-              "RelativeDocumentMoniker": "project_prn231\\appsettings.json",
-              "ToolTip": "C:\\Users\\Admin\\Downloads\\hoc\\SEKy8\\PRN231\\Project\\project_prn231\\project_prn231\\project_prn231\\appsettings.json",
-              "RelativeToolTip": "project_prn231\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-10-25T06:08:33.558Z"
             },
             {
               "$type": "Document",

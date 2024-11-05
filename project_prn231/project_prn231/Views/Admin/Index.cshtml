@@ -5,13 +5,25 @@
 }
 @if (Context.Session.GetString("IsAdmin") == "True")
 {
+
 <div class="container mt-4">
     <h2>Danh sách câu hỏi</h2>
     <a href="/Admin/Create" class="btn btn-success">Thêm câu hỏi mới</a>
     <a href="/" class="btn btn-secondary">Trở về trang chủ</a>
+
+
     <table class="table table-striped">
         <thead class="thead-dark">
             <tr>
+
+                    <th>
+                        <button id="deleteSelected" class="btn btn-danger btn-sm" onclick="deleteSelectedQuestions()"
+                                style="font-size: 12px; padding: 4px 8px; height: 30px; background-color: transparent; border: solid; color: white;">
+                            Xóa đã chọn
+                        </button>
+
+                        <input type="checkbox" id="selectAll" onclick="toggleSelectAll(this)" /> All
+                    </th>
                 <th>ID</th>
                 <th>Nội dung câu hỏi</th>
                 <th>Ảnh</th>
@@ -30,6 +42,9 @@
                     @foreach (var question in Model)
                     {
                         <tr>
+                            <td>
+                                <input type="checkbox" class="questionCheckbox" value="@question.QuestionId" />
+                            </td>
                             <td>@question.QuestionId</td>
                             <td>@question.QuestionText</td>
                             <td>
@@ -49,6 +64,7 @@
 
 
 </div>
+
 }
 else
 {
@@ -60,3 +76,36 @@ else
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+    function toggleSelectAll(source) {
+        const checkboxes = document.querySelectorAll('.questionCheckbox');
+        checkboxes.forEach(checkbox => checkbox.checked = source.checked);
+    }
+
+    async function deleteSelectedQuestions() {
+        const selectedIds = Array.from(document.querySelectorAll('.questionCheckbox:checked'))
+            .map(checkbox => checkbox.value);
+
+        if (selectedIds.length === 0) {
+            alert('Vui lòng chọn ít nhất một câu hỏi để xóa.');
+            return;
+        }
+
+        if (confirm('Bạn có chắc chắn muốn xóa các câu hỏi đã chọn không?')) {
+            const response = await fetch('/Admin/DeleteSelected', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(selectedIds)
+            });
+
+            if (response.ok) {
+                alert('Đã xóa các câu hỏi thành công.');
+                window.location.reload();
+            } else {
+                alert('Có lỗi xảy ra khi xóa các câu hỏi.');
+            }
+        }
+    }
+</script>
