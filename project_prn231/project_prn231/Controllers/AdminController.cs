@@ -46,6 +46,37 @@ namespace project_prn231.Controllers
                 }
             }
         }
+
+        //public async Task<IActionResult> Index(string searchString, int pageNumber = 1, int pageSize = 10)
+        //{
+        //    int? userId = HttpContext.Session.GetInt32("UserId");
+
+        //    if (!userId.HasValue)
+        //    {
+        //        return RedirectToAction("Login", "Login");
+        //    }
+
+        //    string url = $"{urlQuestion}/GetByUser?userId={userId.Value}&searchString={searchString}&pageNumber={pageNumber}&pageSize={pageSize}";
+
+        //    using (HttpResponseMessage res = await _httpClient.GetAsync(url))
+        //    {
+        //        if (res.IsSuccessStatusCode)
+        //        {
+        //            string result = await res.Content.ReadAsStringAsync();
+        //            var response = JsonConvert.DeserializeObject<PaginatedResponse<Question>>(result);
+
+        //            ViewBag.CurrentPage = response.CurrentPage;
+        //            ViewBag.TotalPages = response.TotalPages;
+        //            ViewBag.SearchString = searchString;
+
+        //            return View(response.Items);
+        //        }
+        //        else
+        //        {
+        //            return View(new List<Question>());
+        //        }
+        //    }
+        //}
         [HttpPost("Create")]
         public async Task<IActionResult> Create([FromForm] Question question)
         {

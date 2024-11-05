@@ -36,6 +36,7 @@ namespace project_prn231_api.Controllers
         {
             var answer = context.Answers
                 .Where(a => a.AnswerId == id)
+                .OrderByDescending(a => a.AnswerId)
                 .Select(a => new
                 {
                     a.AnswerId,

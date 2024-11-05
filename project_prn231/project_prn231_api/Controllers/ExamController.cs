@@ -116,16 +116,17 @@ namespace project_prn231_api.Controllers
         public IActionResult GetByUserId(int userId)
         {
             var exams = context.Exams
-                .Include(x => x.PkUser) // Lấy thông tin User
-                .Include(x => x.PkCategory) // Lấy thông tin Category
+                .Include(x => x.PkUser)
+                .Include(x => x.PkCategory)
                 .Where(x => x.PkUserId == userId)
+                .OrderByDescending(x => x.ExamDate)
                 .Select(x => new
                 {
                     x.ExamId,
                     x.PkUserId,
-                    Username = x.PkUser.Username, // Lấy Username từ PkUser
+                    Username = x.PkUser.Username,
                     x.PkCategoryId,
-                    CategoryName = x.PkCategory.CategoryName, // Lấy CategoryName từ PkCategory
+                    CategoryName = x.PkCategory.CategoryName, 
                     x.ExamDate,
                     x.Point
                 })

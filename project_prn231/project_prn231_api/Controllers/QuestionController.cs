@@ -69,6 +69,7 @@ namespace project_prn231_api.Controllers
         {
             var questions = context.Questions
                 .Where(q => q.PkUserId == userId)
+                .OrderByDescending(q => q.QuestionId)
                 .Select(x => new
                 {
                     x.QuestionId,
@@ -96,6 +97,7 @@ namespace project_prn231_api.Controllers
         {
             var question = context.Questions
                 .Where(x => x.QuestionId == id)
+                .OrderByDescending(x => x.QuestionId)
                 .Select(x => new Question
                 {
                     QuestionId = x.QuestionId,
@@ -103,7 +105,9 @@ namespace project_prn231_api.Controllers
                     PkCategoryId = x.PkCategoryId,
                     QuestionImage = x.QuestionImage,
                     PkUserId = x.PkUserId,
-                    Answers = x.Answers.Select(a => new Answer
+                    Answers = x.Answers
+                    .OrderByDescending(a => a.AnswerId)
+                    .Select(a => new Answer
                     {
                         AnswerId = a.AnswerId,
                         AnswerText = a.AnswerText,
