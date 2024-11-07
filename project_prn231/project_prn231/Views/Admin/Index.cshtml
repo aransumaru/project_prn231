@@ -55,6 +55,7 @@
     <div class="container mt-4">
         <h2>Danh sách câu hỏi</h2>
         <a href="/Admin/Create" class="btn btn-success">Thêm câu hỏi mới</a>
+
         <a href="/" class="btn btn-secondary">Trở về trang chủ</a>
 
         <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Tìm kiếm câu hỏi" title="Type in a name">
@@ -68,7 +69,7 @@
                         </button>
                         <input type="checkbox" id="selectAll" onclick="toggleSelectAll(this)" /> All
                     </th>
-                    <th>ID</th>
+                    <th id="sortById" onclick="sortTable()">ID</th>
                     <th>Nội dung câu hỏi</th>
                     <th>Ảnh</th>
                     <th>Hành động</th>
@@ -108,6 +109,43 @@
         const itemsPerPage = 5;
         let currentPage = 1;
         let searchFilter = '';
+        let isSortedAsc = false;  // Biến để theo dõi trạng thái sắp xếp
+
+        function sortTable() {
+            const rows = Array.from(document.querySelectorAll('.questionRow'));
+            const tableBody = document.getElementById('tableBody');
+
+            // Sắp xếp các hàng theo ID
+            rows.sort((rowA, rowB) => {
+                const idA = parseInt(rowA.querySelector('td:nth-child(2)').innerText);
+                const idB = parseInt(rowB.querySelector('td:nth-child(2)').innerText);
+
+                // Nếu là sắp xếp tăng dần
+                if (isSortedAsc) {
+                    return idA - idB;
+                } else {
+                    return idB - idA;
+                }
+            });
+
+            // Cập nhật lại trạng thái sắp xếp
+            isSortedAsc = !isSortedAsc;
+
+            // Thêm các hàng đã sắp xếp vào lại bảng
+            rows.forEach(row => tableBody.appendChild(row));
+            renderTable();  // Vẽ lại bảng sau khi sắp xếp
+        }
+        function sortRandom() {
+            const rows = Array.from(document.querySelectorAll('.questionRow'));
+            const tableBody = document.getElementById('tableBody');
+
+            rows.sort(() => Math.random() - 0.5);
+
+            // Thêm các hàng đã sắp xếp vào lại bảng
+            rows.forEach(row => tableBody.appendChild(row));
+            renderTable();
+        }
+
 
         function renderTable() {
             const rows = document.querySelectorAll('.questionRow');
