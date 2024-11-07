@@ -15,11 +15,10 @@ namespace project_prn231.Controllers
         private readonly HttpClient _httpClient;
         private readonly string urlUser = "https://localhost:7272/api/User";
 
-        // GET: Register
         [HttpGet]
         public IActionResult Index()
         {
-            return View(); // Trả về view đăng ký
+            return View();
         }
 
         [HttpPost]

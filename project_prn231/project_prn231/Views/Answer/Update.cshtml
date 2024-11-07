@@ -17,8 +17,14 @@
 
         <div class="form-group">
             <label for="AnswerImage">Ảnh câu trả lời:</label>
-            <input type="text" class="form-control" id="AnswerImage" name="AnswerImage" />
-            <small class="form-text text-muted">Nếu bạn không muốn thay đổi ảnh, hãy để trống.</small>
+                <input type="text" class="form-control" id="AnswerImage" name="AnswerImage" value="@Model.AnswerImage" />
+                @if (!string.IsNullOrEmpty(Model.AnswerImage))
+                {
+                    <div class="mt-2">
+                        <img src="@Model.AnswerImage" alt="Hình ảnh cây trả lời" class="img-fluid" />
+                    </div>
+                }
+                <small class="form-text text-muted">Nếu bạn không muốn thay đổi ảnh, hãy để trống.</small>
         </div>
 
         <div class="form-group">

@@ -14,9 +14,7 @@
 
         <div class="card">
             <div class="card-body">
-                <h5 class="card-title">Thông tin bài thi</h5>
-                <p><strong>ID Người dùng:</strong> @Model.PkUserId.</p>
-                <p><strong>ID Danh mục:</strong> @Model.PkCategoryId</p>
+                <h5 class="card-title">Kết Quả</h5>
                 <p><strong>Ngày thi:</strong> @(Model.ExamDate.HasValue ? Model.ExamDate.Value.ToString("dd/MM/yyyy HH:mm") : "Không có dữ liệu")</p>
                 <p><strong>Số điểm đạt được:</strong> @Model.Point</p>
             </div>
@@ -24,7 +22,10 @@
 
         <div class="mt-4">
             <h5>Cảm ơn bạn đã tham gia bài thi!</h5>
-            <a href="@Url.Action("Index", "Home")" class="btn btn-primary">Về trang chủ</a>
+            <td>
+                <a href="History/History/Detail?examId=@Model.ExamId&categoryId=@Model.PkCategoryId" class="btn btn-primary">Xem chi tiết</a>
+            </td>
+            <a href="/" class="btn btn-primary">Về trang chủ</a>
         </div>
     </div>
 

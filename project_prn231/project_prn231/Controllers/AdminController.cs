@@ -239,10 +239,9 @@ namespace project_prn231.Controllers
                 {
                     string result = await res.Content.ReadAsStringAsync();
 
-                    // Deserialize dữ liệu thành object Question chứa cả Answers
                     var questionDetail = JsonConvert.DeserializeObject<Question>(result);
 
-                    return View(questionDetail); // Trả về view với thông tin chi tiết
+                    return View(questionDetail); 
                 }
                 else
                 {

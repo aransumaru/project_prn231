@@ -44,8 +44,7 @@ namespace project_prn231.Controllers
                             point++;
                         }
 
-                        // Lưu thông tin câu trả lời của người dùng
-                        var questionId = answer.PkQuestionId; // Lấy ID câu hỏi tương ứng
+                        var questionId = answer.PkQuestionId;
                         userAnswers.Add((questionId, answerId));
                     }
                 }
@@ -70,7 +69,6 @@ namespace project_prn231.Controllers
                     {
                         var createdExam = JsonConvert.DeserializeObject<Exam>(examJson);
                         var examId = createdExam?.ExamId;
-                        // Gọi lại phương thức SaveUserAnswer với examId vừa tạo
                         foreach (var answerId in selectedAnswers)
                         {
                             using (HttpResponseMessage resAnswer = await _httpClient.GetAsync($"{urlAnswer}/{answerId}"))
@@ -79,18 +77,16 @@ namespace project_prn231.Controllers
                                 {
                                     var answerJson = await resAnswer.Content.ReadAsStringAsync();
                                     var answer = JsonConvert.DeserializeObject<Answer>(answerJson);
-                                    var questionId = answer.PkQuestionId; // Lấy ID câu hỏi
+                                    var questionId = answer.PkQuestionId;
 
-                                    // Lưu thông tin câu trả lời với examId
                                     await SaveUserAnswer(examId, questionId, answerId);
                                 }
                             }
                         }
-                        return View("Exam", exam);
+                        return View("Exam", createdExam);
                     }
                     catch (JsonReaderException ex)
                     {
-                        // Nếu có lỗi trong quá trình phân tích cú pháp JSON, trả về lỗi cùng với examJson
                         return BadRequest(new { error = "Lỗi khi phân tích cú pháp JSON.", examJson, exceptionMessage = ex.Message });
                     }
 
@@ -107,17 +103,16 @@ namespace project_prn231.Controllers
         {
             var userAnswer = new UserAnswer
             {
-                PkExamId = examId,      // Gán ID bài thi vừa tạo
-                PkQuestionId = questionId, // Gán ID câu hỏi
-                PkAnswerId = answerId,   // Gán ID câu trả lời
-                IsSelected = true        // Gán giá trị true, có thể thay đổi tùy thuộc vào logic của bạn
+                PkExamId = examId,     
+                PkQuestionId = questionId,
+                PkAnswerId = answerId,  
+                IsSelected = true   
             };
 
             using (HttpResponseMessage res = await _httpClient.PostAsJsonAsync("https://localhost:7272/api/UserAnswer", userAnswer))
             {
                 if (!res.IsSuccessStatusCode)
                 {
-                    // Nếu có lỗi, đọc nội dung phản hồi từ server
                     var errorContent = await res.Content.ReadAsStringAsync();
                     Console.WriteLine($"Error saving user answer: {res.StatusCode} - {errorContent}");
                 }
