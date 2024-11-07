@@ -1,55 +1,95 @@
 ﻿@model List<project_prn231.Models.Question>
-
 @{
     ViewBag.Title = "Danh sách câu hỏi";
 }
+
 @if (Context.Session.GetString("IsAdmin") == "True")
 {
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            * {
+                box-sizing: border-box;
+            }
 
-<div class="container mt-4">
-    <h2>Danh sách câu hỏi</h2>
-    <a href="/Admin/Create" class="btn btn-success">Thêm câu hỏi mới</a>
-    <a href="/" class="btn btn-secondary">Trở về trang chủ</a>
+            #myInput {
+                background-position: 10px 10px;
+                background-repeat: no-repeat;
+                width: 100%;
+                font-size: 16px;
+                padding: 12px 20px 12px 40px;
+                border: 1px solid #ddd;
+                margin-bottom: 12px;
+            }
 
+            .highlight {
+                background-color: yellow;
+                color: black;
+            }
 
-    <table class="table table-striped">
-        <thead class="thead-dark">
-            <tr>
+            .pagination {
+                display: inline-block;
+                padding-top: 10px;
+            }
 
+                .pagination a {
+                    margin: 0 5px;
+                    padding: 8px 16px;
+                    background-color: #f1f1f1;
+                    color: #007bff;
+                    border: 1px solid #ddd;
+                    border-radius: 5px;
+                    text-decoration: none;
+                }
+
+                    .pagination a:hover {
+                        background-color: #ddd;
+                    }
+
+                .pagination .active {
+                    background-color: #007bff;
+                    color: white;
+                }
+        </style>
+    </head>
+    <div class="container mt-4">
+        <h2>Danh sách câu hỏi</h2>
+        <a href="/Admin/Create" class="btn btn-success">Thêm câu hỏi mới</a>
+        <a href="/" class="btn btn-secondary">Trở về trang chủ</a>
+
+        <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Tìm kiếm câu hỏi" title="Type in a name">
+        <table id="myTable" class="table table-striped">
+            <thead class="thead-dark">
+                <tr>
                     <th>
                         <button id="deleteSelected" class="btn btn-danger btn-sm" onclick="deleteSelectedQuestions()"
                                 style="font-size: 12px; padding: 4px 8px; height: 30px; background-color: transparent; border: solid; color: white;">
                             Xóa đã chọn
                         </button>
-
                         <input type="checkbox" id="selectAll" onclick="toggleSelectAll(this)" /> All
                     </th>
-                <th>ID</th>
-                <th>Nội dung câu hỏi</th>
-                <th>Ảnh</th>
-                <th>Hành động</th>
-            </tr>
-        </thead>
-        <tbody>
+                    <th>ID</th>
+                    <th>Nội dung câu hỏi</th>
+                    <th>Ảnh</th>
+                    <th>Hành động</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
                 @if (Model == null || !Model.Any())
                 {
                     <tr>
-                        <td colspan="4" class="text-center">Chưa thêm câu hỏi nào</td>
+                        <td colspan="5" class="text-center">Chưa thêm câu hỏi nào</td>
                     </tr>
                 }
                 else
                 {
                     @foreach (var question in Model)
                     {
-                        <tr>
-                            <td>
-                                <input type="checkbox" class="questionCheckbox" value="@question.QuestionId" />
-                            </td>
+                        <tr class="questionRow">
+                            <td><input type="checkbox" class="questionCheckbox" value="@question.QuestionId" /></td>
                             <td>@question.QuestionId</td>
-                            <td>@question.QuestionText</td>
-                            <td>
-                                <img src="@question.QuestionImage" alt="Hình ảnh câu hỏi" style="width: 100px; height: auto;" />
-                            </td>
+                            <td class="question-text">@question.QuestionText</td>
+                            <td><img src="@question.QuestionImage" alt="Hình ảnh câu hỏi" style="width: 100px; height: auto;" /></td>
                             <td>
                                 <a href="/Admin/Detail/@question.QuestionId" class="btn btn-info">Thông tin</a>
                                 <a href="/Admin/Update/@question.QuestionId" class="btn btn-warning">Sửa</a>
@@ -58,54 +98,144 @@
                         </tr>
                     }
                 }
+            </tbody>
+        </table>
 
-        </tbody>
-    </table>
+        <div id="pagination" class="pagination"></div>
+    </div>
+
+    <script>
+        const itemsPerPage = 5;
+        let currentPage = 1;
+        let searchFilter = '';
+
+        function renderTable() {
+            const rows = document.querySelectorAll('.questionRow');
+            let filteredRows = Array.from(rows);
+
+            // Nếu có từ khóa tìm kiếm, lọc hàng theo từ khóa
+            if (searchFilter) {
+                filteredRows = filteredRows.filter(row => {
+                    const questionText = row.querySelector('.question-text').innerText.toUpperCase();
+                    return questionText.includes(searchFilter);
+                });
+            }
+
+            // Đặt data-is-filtered="true" cho các hàng phù hợp
+            rows.forEach(row => {
+                const checkbox = row.querySelector('.questionCheckbox');
+                checkbox.setAttribute('data-is-filtered', filteredRows.includes(row) ? 'true' : 'false');
+            });
+
+            const startIdx = (currentPage - 1) * itemsPerPage;
+            const endIdx = startIdx + itemsPerPage;
+
+            // Ẩn tất cả các hàng và chỉ hiển thị các hàng trong phạm vi trang hiện tại
+            rows.forEach(row => row.style.display = 'none');
+            filteredRows.slice(startIdx, endIdx).forEach(row => row.style.display = '');
+
+            renderPagination(filteredRows.length);
+        }
 
 
-</div>
+        function renderPagination(filteredLength) {
+            const pageCount = Math.ceil(filteredLength / itemsPerPage);
+            const paginationContainer = document.getElementById('pagination');
+            paginationContainer.innerHTML = '';
+
+            for (let i = 1; i <= pageCount; i++) {
+                const pageLink = document.createElement('a');
+                pageLink.href = "#";
+                pageLink.innerText = i;
+                if (i === currentPage) {
+                    pageLink.classList.add('active');
+                }
+                pageLink.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    currentPage = i;
+                    renderTable();
+                });
+                paginationContainer.appendChild(pageLink);
+            }
+        }
+
+        function toggleSelectAll(source) {
+            const checkboxes = document.querySelectorAll('.questionCheckbox[data-is-filtered="true"]');
+            checkboxes.forEach(checkbox => {
+                checkbox.checked = source.checked;
+            });
+        }
+
+
+
+        async function deleteSelectedQuestions() {
+            const selectedIds = Array.from(document.querySelectorAll('.questionCheckbox:checked'))
+                .map(checkbox => checkbox.value);
+
+            if (selectedIds.length === 0) {
+                alert('Vui lòng chọn ít nhất một câu hỏi để xóa.');
+                return;
+            }
+
+            if (confirm('Bạn có chắc chắn muốn xóa các câu hỏi đã chọn không?')) {
+                const response = await fetch('/Admin/DeleteSelected', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(selectedIds)
+                });
+
+                if (response.ok) {
+                    alert('Đã xóa các câu hỏi thành công.');
+                    window.location.reload();
+                } else {
+                    alert('Có lỗi xảy ra khi xóa các câu hỏi.');
+                }
+            }
+        }
+
+        function myFunction() {
+            const input = document.getElementById("myInput");
+            searchFilter = input.value.toUpperCase();
+            currentPage = 1;  // Reset về trang đầu tiên khi tìm kiếm mới
+            highlightSearchResults();
+            renderTable();
+        }
+
+        function highlightSearchResults() {
+            const rows = document.querySelectorAll('.questionRow');
+
+            rows.forEach(row => {
+                const questionTextCell = row.querySelector('.question-text');
+                const innerHTML = questionTextCell.innerHTML;
+                questionTextCell.innerHTML = innerHTML.replace(/<span class="highlight">|<\/span>/g, '');
+            });
+
+            if (searchFilter) {
+                rows.forEach(row => {
+                    const questionTextCell = row.querySelector('.question-text');
+                    const text = questionTextCell.innerText.toUpperCase();
+
+                    if (text.includes(searchFilter)) {
+                        const regex = new RegExp(`(${searchFilter})`, 'gi');
+                        questionTextCell.innerHTML = questionTextCell.innerHTML.replace(regex, '<span class="highlight">$1</span>');
+                    }
+                });
+            }
+        }
+
+        renderTable();
+    </script>
 
 }
 else
 {
-    var isAdmin = Context.Session.GetString("IsAdmin");
-    <p class="text-danger">Bạn cần đăng nhập với tài khoản admin để thêm câu hỏi. @isAdmin</p>
+    <p class="text-danger">Bạn cần đăng nhập với tài khoản admin để thêm câu hỏi.</p>
 }
+
+
 <!-- Thêm link đến Bootstrap JS và CSS nếu chưa có -->
 <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-<script>
-    function toggleSelectAll(source) {
-        const checkboxes = document.querySelectorAll('.questionCheckbox');
-        checkboxes.forEach(checkbox => checkbox.checked = source.checked);
-    }
-
-    async function deleteSelectedQuestions() {
-        const selectedIds = Array.from(document.querySelectorAll('.questionCheckbox:checked'))
-            .map(checkbox => checkbox.value);
-
-        if (selectedIds.length === 0) {
-            alert('Vui lòng chọn ít nhất một câu hỏi để xóa.');
-            return;
-        }
-
-        if (confirm('Bạn có chắc chắn muốn xóa các câu hỏi đã chọn không?')) {
-            const response = await fetch('/Admin/DeleteSelected', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify(selectedIds)
-            });
-
-            if (response.ok) {
-                alert('Đã xóa các câu hỏi thành công.');
-                window.location.reload();
-            } else {
-                alert('Có lỗi xảy ra khi xóa các câu hỏi.');
-            }
-        }
-    }
-</script>
