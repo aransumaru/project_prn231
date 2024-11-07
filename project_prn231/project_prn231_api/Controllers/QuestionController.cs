@@ -38,6 +38,35 @@ namespace project_prn231_api.Controllers
         //    return Ok(questions);
         //}
 
+
+        [HttpGet]
+        public IActionResult Get()
+        {
+            var questions = context.Questions
+                .OrderByDescending(x => x.QuestionId)
+                .Select(x => new
+                {
+                    x.QuestionId,
+                    x.PkCategoryId,
+                    x.QuestionText,
+                    x.QuestionImage,
+                    x.PkUserId,
+                    Answers = x.Answers.Select(a => new
+                    {
+                        a.AnswerId,
+                        a.AnswerText,
+                        a.AnswerImage,
+                        a.IsCorrect,
+                        a.PkUserId
+                    })
+
+                    .ToList()
+                })
+                .ToList();
+
+            return Ok(questions);
+
+        }
         [HttpGet("GetByCategory")]
         public IActionResult GetByCategory(int categoryId)
         {

@@ -100,6 +100,8 @@ namespace project_prn231_api.Controllers
             var userAnswers = await context.UserAnswers
                 .Where(ua => ua.PkExamId == examId)
                 .Include(ua => ua.PkAnswer) // Kết nối với bảng Answer
+                .Include(ua => ua.PkQuestion)
+                .OrderByDescending(ua => ua.PkQuestionId)
                 .ToListAsync();
 
             if (userAnswers == null || !userAnswers.Any())
@@ -111,8 +113,12 @@ namespace project_prn231_api.Controllers
             var userAnswerDetails = userAnswers.Select(ua => new
             {
                 ua.PkAnswerId,
+                ua.PkQuestionId,
                 ua.IsSelected,
+                QuestionText = ua.PkQuestion.QuestionText,
+                QuestionImage = ua.PkQuestion.QuestionImage,
                 AnswerText = ua.PkAnswer.AnswerText,
+                AnswerImage = ua.PkAnswer.AnswerImage,
                 IsCorrect = ua.PkAnswer.IsCorrect
             }).ToList();
 

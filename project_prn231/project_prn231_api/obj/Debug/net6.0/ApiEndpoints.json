@@ -286,6 +286,16 @@
   },
   {
     "ContainingType": "project_prn231_api.Controllers.QuestionController",
+    "Method": "Get",
+    "RelativePath": "api/Question",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "project_prn231_api.Controllers.QuestionController",
     "Method": "Insert",
     "RelativePath": "api/Question",
     "HttpMethod": "POST",

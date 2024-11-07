@@ -160,7 +160,6 @@ namespace project_prn231_api.Controllers
                         QuestionText = q.QuestionText,
                         AnswerText = a.AnswerText,
                         IsCorrect = (a.IsCorrect ?? false) && context.UserAnswers.Any(ua => ua.PkExamId == examId && ua.PkAnswerId == a.AnswerId && (ua.IsSelected ?? false))
-
                     })
                 ).ToList();
 

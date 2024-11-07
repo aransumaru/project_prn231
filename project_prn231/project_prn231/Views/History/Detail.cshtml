@@ -5,38 +5,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chi tiết bài thi</title>
+    <title>Kết quả bài kiểm tra</title>
     <link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+        .list-group{
+            padding-right:500px;
+        }
+        .correct-answer {
+            background-color: green;
+            color: white;
+        }
+
+        .incorrect-answer {
+            background-color: red;
+            color: white;
+        }
+
+        .not-selected-correct {
+            background-color: #88C273;
+        }
+
+        .check-box {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 2px solid #ddd;
+            border-radius: 3px;
+            background-color: transparent;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        .checked {
+            color: white;
+            font-weight: bold;
+        }
+
+        .incorrect-check {
+            color: white;
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
     <div class="container mt-4">
-        <h1 class="text-center">Chi tiết bài thi</h1>
+        <h1 class="text-center">Danh sách câu hỏi</h1>
+        <div class="row">
+            @{
+                int count = 1;
+                var groupedQuestions = Model.GroupBy(item => new { item.QuestionText, item.QuestionImage });
+            }
+            @foreach (var questionGroup in groupedQuestions)
+            {
+                <div class="col-md-12">
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <h5 class="card-title"> @count: @questionGroup.Key.QuestionText</h5>
+                            @if (!string.IsNullOrEmpty(questionGroup.Key.QuestionImage))
+                            {
+                                <img src="@questionGroup.Key.QuestionImage" alt="Ảnh câu hỏi" style="max-width: 200px; max-height: 200px;" />
+                            }
 
-        <div class="mt-4">
-            <table class="table table-striped">
-                <thead>
-                    <tr>
-                        <th>Câu hỏi</th>
-                        <th>Câu trả lời</th>
-                        <th>Trạng thái</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    @foreach (var item in Model)
-                    {
-                        <tr>
-                            <td>@item.QuestionText</td>
-                            <td>@item.AnswerText</td>
-                            <td>@(item.IsCorrect ? "Đúng" : "Sai")</td>
-                        </tr>
-                    }
-                </tbody>
-            </table>
-        </div>
+                            <h6 class="mt-3">Kết quả: </h6>
+                            <ul class="list-group">
+                                @foreach (var answer in questionGroup)
+                                {
+                                    <li class="list-group-item
+                                        @(answer.IsSelected && answer.IsCorrect ? "correct-answer" : "")
+                                        @(!answer.IsSelected && answer.IsCorrect ? "not-selected-correct" : "")
+                                        @(answer.IsSelected && !answer.IsCorrect ? "incorrect-answer" : "")">
+                                        
+                                        @if (answer.IsSelected)
+                                        {
+                                            <div class="check-box
+                                            @(answer.IsSelected && answer.IsCorrect ? "checked" : "")
+                                            @(answer.IsSelected && !answer.IsCorrect ? "incorrect-check" : "")">
 
-        <div class="mt-4">
-            <a href="@Url.Action("History", "History")" class="btn btn-primary">Trở lại lịch sử</a>
+                                                @if (answer.IsCorrect)
+                                                {
+                                                    <span>V</span>
+                                                }
+                                                else
+                                                {
+                                                    <span>X</span>
+                                                }
+                                            </div>
+                                        }
+
+                                        @answer.AnswerText
+
+                                        @if (!string.IsNullOrEmpty(answer.AnswerImage))
+                                        {
+                                            <img src="@answer.AnswerImage" alt="Ảnh câu trả lời" width="100" />
+                                        }
+                                        <span hidden>@(answer.IsCorrect ? "Đúng" : "Sai")</span>
+                                        <span hidden>@(answer.IsSelected ? "chọn" : "không")</span>
+
+                                    </li>
+                                }
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                count++;
+            }
         </div>
+        <a href="@Url.Action("History", "History")" class="btn btn-primary">Đến lịch sử kiểm tra</a>
     </div>
 
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>

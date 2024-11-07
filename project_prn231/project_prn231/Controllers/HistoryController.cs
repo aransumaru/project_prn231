@@ -13,6 +13,8 @@ namespace project_prn231.Controllers
         }
         private readonly HttpClient _httpClient;
         private readonly string urlExam = "https://localhost:7272/api/Exam/User";
+        private readonly string urlUserAnswer = "https://localhost:7272/api/UserAnswer";
+        private readonly string urlQuestion = "https://localhost:7272/api/Question";
         public async Task<IActionResult> History()
         {
             int? userId = HttpContext.Session.GetInt32("UserId");
@@ -39,23 +41,42 @@ namespace project_prn231.Controllers
         }
 
         [HttpGet("History/Detail")]
-        public async Task<IActionResult> Detail(int examId)
+        public async Task<IActionResult> Detail(int examId, int categoryId)
         {
-            using (HttpResponseMessage res = await _httpClient.GetAsync($"https://localhost:7272/api/Exam/Detail/{examId}"))
+            using (HttpResponseMessage userAnswerRes = await _httpClient.GetAsync($"{urlUserAnswer}/Exam/{examId}"))
             {
-                if (res.IsSuccessStatusCode)
-                {
-                    string result = await res.Content.ReadAsStringAsync();
-                    List<AnswerDetailViewModel> answerDetails = JsonConvert.DeserializeObject<List<AnswerDetailViewModel>>(result);
-                    return View("Detail", answerDetails);
-                }
-                else
+                if (!userAnswerRes.IsSuccessStatusCode)
                 {
                     return NotFound("Không tìm thấy chi tiết bài thi.");
                 }
+
+                string userAnswerResult = await userAnswerRes.Content.ReadAsStringAsync();
+                List<AnswerDetailViewModel> userAnswers = JsonConvert.DeserializeObject<List<AnswerDetailViewModel>>(userAnswerResult);
+
+                using (HttpResponseMessage questionRes = await _httpClient.GetAsync($"{urlQuestion}/GetByCategory?categoryId={categoryId}"))
+                {
+                    if (!questionRes.IsSuccessStatusCode)
+                    {
+                        return NotFound("Không tìm thấy dữ liệu câu hỏi.");
+                    }
+
+                    string questionResult = await questionRes.Content.ReadAsStringAsync();
+                    List<QuestionViewModel> questions = JsonConvert.DeserializeObject<List<QuestionViewModel>>(questionResult);
+
+                    var answerDetails = questions.SelectMany(q => q.Answers.Select(a => new AnswerDetailViewModel
+                    {
+                        QuestionText = q.QuestionText,
+                        QuestionImage = q.QuestionImage,
+                        AnswerText = a.AnswerText,
+                        AnswerImage = a.AnswerImage,
+                        IsCorrect = a.IsCorrect,
+                        IsSelected = userAnswers.Any(ua => ua.QuestionText == q.QuestionText && ua.AnswerText == a.AnswerText && ua.IsSelected)
+                    })).ToList();
+
+                    return View("Detail", answerDetails);
+                }
             }
         }
-
 
     }
 }
