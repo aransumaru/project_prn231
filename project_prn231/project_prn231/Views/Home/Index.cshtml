@@ -77,7 +77,6 @@
                         <div class="card-body">
                             <h5 class="card-title">@category.CategoryName</h5>
                             <p class="card-text">Kiểm tra kỹ năng thi bằng lái @category.CategoryName.</p>
-                            <a href="/FlashCard?categoryId=@category.CategoryId" class="btn btn-primary">Flash Card</a>
                             @if (Context.Session.GetString("UserId") != null)
                             {
                                 <a href="/Question?categoryId=@category.CategoryId" class="btn btn-primary">Bắt đầu</a>

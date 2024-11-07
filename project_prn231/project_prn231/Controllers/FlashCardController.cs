@@ -27,6 +27,7 @@ namespace project_prn231.Controllers
                         string result = await res.Content.ReadAsStringAsync();
                         List<Question> questions = JsonConvert.DeserializeObject<List<Question>>(result);
 
+
                         return View(questions);
                     }
                     else

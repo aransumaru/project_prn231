@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿@model IEnumerable<project_prn231.Models.Question>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -39,6 +40,11 @@
             background-color: #dcdcdc;
         }
 
+        .card-front {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
         .card-front,
         .card-back {
             display: flex;
@@ -63,6 +69,10 @@
         .pagination {
             justify-content: center;
         }
+
+        .page-item.prev .page-link, .page-item.next .page-link {
+            cursor: pointer;
+        }
     </style>
 </head>
 <body class="d-flex align-items-center justify-content-center">
@@ -75,19 +85,38 @@
                     <div class="flashcard">
                         <div class="card-front">
                             <div class="text-center">@question.QuestionText</div>
+                        <div class="text-center">
+                            <ul>
+                                @foreach (var answer in question.Answers)
+                                {
+                                    <li>@answer.AnswerText</li>
+                                }
+                            </ul>
+                        </div>
                         </div>
 
                         <div class="card-back">
-                            <div class="text-center">12312312</div>
+                        @if (question.Answers.Any(a => a.IsCorrect == true))
+                        {
+                            @question.Answers.First(a => a.IsCorrect == true).AnswerText
+                        }
+                        else
+                        {
+                            <span>Không có câu trả lời đúng</span>
+                        }
                         </div>
                     </div>
                 </div>
             }
 
         <div class="pagination mt-3">
+
             <ul class="pagination">
                 <li class="page-item prev">
                     <span class="page-link">Previous</span>
+                </li>
+                <li>
+                    <span id="currentQuestion">1</span> / <span id="totalQuestions">@Model.Count()</span>
                 </li>
                 <li class="page-item next">
                     <span class="page-link">Next</span>
@@ -95,27 +124,64 @@
             </ul>
         </div>
     </div>
+    <div class="modal fade" id="thankYouModal" tabindex="-1" aria-labelledby="thankYouModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="thankYouModalLabel">Bạn đã hoàn thành!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Bạn đã hoàn thành tất cả các câu hỏi.
+                </div>
+                <div class="modal-footer">
+                    <button id="resetButton" type="button" class="btn btn-secondary" data-bs-dismiss="modal">Làm lại</button>
+                    <a href="/Question?categoryId=@Model.First().PkCategoryId" class="btn btn-primary">Làm bài thi thử</a>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            let currentPage = 0;
+        document.addEventListener('DOMContentLoaded', function () {
+            // Lấy userId từ session
+            const userId = '@ViewData["UserId"]'; // Hoặc cách lấy khác tùy vào cách bạn lưu session
+            const categoryId = '@Model.First().PkCategoryId'; // Lấy categoryId (hoặc từ model nếu cần)
+
+            // Sử dụng userId và categoryId để lưu tiến trình
+            let currentPage = parseInt(sessionStorage.getItem(`currentQuestion_${userId}_${categoryId}`)) || 0;
             const flashcards = document.querySelectorAll('.flashcard-card');
             const totalPages = flashcards.length;
+            const currentQuestionElem = document.getElementById('currentQuestion');
 
+            // Hàm hiển thị flashcard dựa trên chỉ số trang
             function showFlashcard(page) {
                 flashcards.forEach((card, index) => {
                     card.style.display = (index === page) ? 'block' : 'none';
                 });
+                currentQuestionElem.innerText = page + 1;
+
+                // Hiển thị modal cảm ơn khi đến câu hỏi cuối
+                if (page + 1 === totalPages) {
+                    const thankYouModal = new bootstrap.Modal(document.getElementById('thankYouModal'));
+                    thankYouModal.show();
+                }
+
+                // Lưu lại currentPage vào sessionStorage cho userId và categoryId
+                sessionStorage.setItem(`currentQuestion_${userId}_${categoryId}`, page);
             }
 
+            // Hiển thị flashcard hiện tại khi tải trang
             showFlashcard(currentPage);
 
+            // Xử lý sự kiện lật thẻ flashcard khi nhấn
             document.querySelectorAll('.flashcard').forEach(card => {
                 card.addEventListener('click', () => {
                     card.classList.toggle('flipped');
                 });
             });
 
+            // Xử lý sự kiện "Next" để chuyển sang câu hỏi tiếp theo
             document.querySelector('.next').addEventListener('click', () => {
                 if (currentPage < totalPages - 1) {
                     currentPage++;
@@ -123,13 +189,23 @@
                 }
             });
 
+            // Xử lý sự kiện "Previous" để quay lại câu hỏi trước
             document.querySelector('.prev').addEventListener('click', () => {
                 if (currentPage > 0) {
                     currentPage--;
                     showFlashcard(currentPage);
                 }
             });
+
+            // Reset lại câu hỏi về từ đầu khi nhấn nút "Làm lại"
+            document.getElementById('resetButton').addEventListener('click', () => {
+                currentPage = 0;
+                showFlashcard(currentPage);
+            });
         });
+
+
+
     </script>
 
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
